@@ -1,13 +1,41 @@
 {
   "name": "vscode-leaflet",
-  "displayName": "vscode-leaflet",
+  "displayName": "Leaflet Map View",
   "description": "Leaflet Map View and Notebook Cell Output Renderer",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.56.0"
   },
+  "icon": "resources/icons/leaflet.png",
+  "publisher": "RandomFractalsInc",
+  "author": "Taras Novak",
+  "contributors": [
+    "Taras Novak"
+  ],
+  "license": "Apache-2.0",
+  "readme": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RandomFractals/vscode-leaflet"
+  },
+  "bugs": "https://github.com/RandomFractals/vscode-leaflet/issues",
+  "homepage": "https://github.com/RandomFractals/vscode-leaflet/README.md",
+  "galleryBanner": {
+    "color": "#333",
+    "theme": "dark"
+  },
   "categories": [
-    "Other"
+    "Data Science",
+    "Education",
+    "Notebooks",
+    "Visualization"
+  ],
+  "keywords": [
+    "leaflet",
+    "map",
+    "view",
+    "notebook",
+    "renderer"
   ],
   "enableProposedApi": true,
   "activationEvents": [],
@@ -17,7 +45,7 @@
       {
         "id": "vscode-leaflet",
         "entrypoint": "./out/client/index.js",
-        "displayName": "vscode-leaflet",
+        "displayName": "Leaflet Map",
         "mimeTypes": [
           "application/geo+json",
           "application/topo+json"

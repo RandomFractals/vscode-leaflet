@@ -14380,7 +14380,7 @@
 {
   "objectId": 434,
   "cityName": "San Pedro De Macoris",
-  "adminName": "San Pedro de Macor¡s",
+  "adminName": "San Pedro de Macorï¿½s",
   "countryName": "Dominican Republic",
   "countryCode": "DR",
   "status": "Provincial capital",
@@ -33018,5 +33018,5 @@
   "popRank": 5,
   "popClass": "100,000 to 249,999",
   "portId": 0
-},
+}
 ]

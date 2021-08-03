@@ -1,20 +1,27 @@
+import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
 import * as style from './style.css';
-import type { RendererContext } from 'vscode-notebook-renderer';
 
-interface IRenderInfo {
+/**
+ * Notebook cell output render info.
+ */
+ interface IRenderInfo {
   container: HTMLElement;
-  mime: string;
-  value: any;
+  mimeType: string;
+  value: OutputItem;
   context: RendererContext<unknown>;
 }
 
-export function render({ container, mime, value }: IRenderInfo) {
+/**
+ * Renders notebook cell output.
+ * @param output Notebook cell output info to render.
+ */
+ export function render(output: IRenderInfo) {
   const pre = document.createElement('pre');
-  pre.classList.add(style.json);
+  pre.className = 'json';
   const code = document.createElement('code');
-  code.textContent = `mime type: ${mime}\n\n${JSON.stringify(value, null, 2)}`;
+  code.textContent = `mime type: ${output.mimeType}\n\n${JSON.stringify(output.value, null, 2)}`;
   pre.appendChild(code);
-  container.appendChild(pre);
+  output.container.appendChild(pre);
 }
 
 if (module.hot) {

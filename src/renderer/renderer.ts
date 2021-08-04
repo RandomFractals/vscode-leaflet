@@ -1,5 +1,6 @@
 import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
 import * as styles from './styles.css';
+const htl = require('htl');
 
 /**
  * Notebook cell output render info.

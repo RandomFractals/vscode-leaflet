@@ -6,7 +6,7 @@
   "engines": {
     "vscode": "^1.58.2"
   },
-  "icon": "resources/icons/leaflet.png",
+  "icon": "resources/icons/leaflet-map.png",
   "publisher": "RandomFractalsInc",
   "author": "Taras Novak",
   "contributors": [

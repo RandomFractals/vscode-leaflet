@@ -59,3 +59,17 @@ $ code .
 vscode-leaflet>vsce package
 ```
 to generate `VSIX` Leaflet Map 🗺️ extension package with [vsce](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#vsce) from our latest for local dev install in vscode.
+
+# Contributions
+
+Any and all test, code or feedback contributions are welcome. 
+
+Open an [issue](https://github.com/RandomFractals/vscode-leaflet/issues) or create a pull request to make this Leaflet Map 🗺️ vscode extension work better for all.
+
+# Backers
+
+<a href='https://ko-fi.com/dataPixy' target='_blank'>
+  <img height='36' style='border:0px;height:36px;' border='0'
+    src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' 
+    alt='support me on ko-fi.com' />
+</a>

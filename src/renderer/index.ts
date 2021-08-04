@@ -1,6 +1,6 @@
 import type {ActivationFunction, OutputItem} from 'vscode-notebook-renderer';
 import errorOverlay from 'vscode-notebook-error-overlay';
-import {render} from './render';
+import {render} from './renderer';
 
 export const activate: ActivationFunction = context => {
   return {

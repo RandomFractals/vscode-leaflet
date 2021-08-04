@@ -1,5 +1,19 @@
 # vscode-leaflet
-VSCode Map View and Notebook Cell Output Renderer with Leaflet
+
+<h1 align="center">
+  <img width="128" height="128" src="resources/icons/leaflet-map.png" />
+  <br />
+  Leaflet Map 🗺️ for Notebook 📓 cell ⌗ data outputs
+</h1>
+
+See [Geo Data Viewer](https://github.com/RandomFractals/vscode-data-preview) 🗺️ vscode extension for advanced [Geo Data Analytics](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.geo-data-viewer) with [kepler.gl](https://kepler.gl/).
+
+## Leaflet Map 🗺️ Renderer
+
+Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https://leafletjs.com) JavaScript library for interactive preview of Geo datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚.
+
+![Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
+ "Leaflet Map 🗺️ Renderer")
 
 # Recommended Extensions
 

@@ -1,6 +1,9 @@
 import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
 import './styles.css';
+// import './leaflet.css';
+
 const htl = require('htl');
+const leafletMap = require('./leafletMap.js');
 
 /**
  * Notebook cell output render info.
@@ -40,6 +43,10 @@ const htl = require('htl');
   if (jsonData.features) { 
     // has GeoJSON Features Collection
     code.textContent = JSON.stringify(jsonData, null, 2);
+
+    // create leaflet map and add it to notebook cell output display
+    // const map = leafletMap.createMap(jsonData, output.container);
+    // output.container.appendChild(map);
   }
   else {
     // show cell output text

@@ -6,6 +6,7 @@
 </a>
 
 <h1 align="center">
+  <img width="600" height="159" src="docs/images/leaflet-logo.png" />
   <img width="128" height="128" src="resources/icons/leaflet-map.png" />
   <br />
   Leaflet Map 🗺️ for Notebook 📓 cell ⌗ data outputs

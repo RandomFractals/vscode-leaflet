@@ -1,5 +1,5 @@
 import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
-import * as style from './style.css';
+import * as styles from './styles.css';
 
 /**
  * Notebook cell output render info.

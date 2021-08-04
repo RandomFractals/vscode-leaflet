@@ -16,10 +16,32 @@ import * as styles from './styles.css';
  * @param output Notebook cell output info to render.
  */
  export function render(output: IRenderInfo) {
+  console.log(`leaflet.map:data:mimeType: ${output.mimeType}`);
+
+  // try to get JSON data
+  let jsonData: any = {};
+  try {
+    jsonData = output.value.json();
+  }
+  catch (error) {
+    console.log('leaflet.map:data: JSON.parse error:\n', error.message);
+  }
+
+  if (jsonData.data) {
+    // get JSON data from REST Book output
+    jsonData = jsonData.data;
+  }
+
+  // create Geo data text output display nodes
   const pre = document.createElement('pre');
-  pre.className = 'json';
   const code = document.createElement('code');
-  code.textContent = `mime type: ${output.mimeType}\n\n${JSON.stringify(output.value, null, 2)}`;
+  if (jsonData.features) { // has GeoJSON Features Collection
+    code.textContent = JSON.stringify(jsonData, null, 2);
+  }
+  else {
+    // show cell output text
+    code.textContent = output.value.text();
+  }
   pre.appendChild(code);
   output.container.appendChild(pre);
 }

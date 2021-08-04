@@ -1,5 +1,5 @@
 import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
-import * as styles from './styles.css';
+import './styles.css';
 const htl = require('htl');
 
 /**
@@ -33,10 +33,12 @@ const htl = require('htl');
     jsonData = jsonData.data;
   }
 
-  // create Geo data text output display nodes
+  // create Geo JSON text output display nodes
   const pre = document.createElement('pre');
+  pre.className = 'geo-json';
   const code = document.createElement('code');
-  if (jsonData.features) { // has GeoJSON Features Collection
+  if (jsonData.features) { 
+    // has GeoJSON Features Collection
     code.textContent = JSON.stringify(jsonData, null, 2);
   }
   else {

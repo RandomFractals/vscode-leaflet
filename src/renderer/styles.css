@@ -1,9 +1,12 @@
-.leaflet-map code {
+.leaflet-map {
   font-family: monospace;
   font-size: 12px;
-  color: lightblue;
-  max-height: 360px; 
-  white-space: pre-wrap;
-  tab-size: 2;
   overflow: auto;
+}
+
+.geo-json {
+  max-height: 360px;
+  overflow: auto;
+  tab-size: 2;
+  white-space: pre-wrap;
 }

@@ -18,8 +18,15 @@ See [Geo Data Viewer](https://github.com/RandomFractals/vscode-data-preview) �
 
 Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https://leafletjs.com) JavaScript library for interactive preview of Geo datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚.
 
-![Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
+![Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
  "Leaflet Map 🗺️ Renderer")
+
+# Features
+
+View [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) Notebook 📓 cell ⌗ data output in plain text:
+
+![Leaflet Map 🗺️ GeoJSON](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-geojson.png?raw=true 
+ "Leaflet Map 🗺️ GeoJSON")
 
 # 🗺️ Examples
 

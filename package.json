@@ -89,6 +89,7 @@
     "webpack-cli": "^4.7.2"
   },
   "dependencies": {
-    "htl": "^0.3.0"
+    "htl": "^0.3.0",
+    "leaflet": "^1.7.1"
   }
 }

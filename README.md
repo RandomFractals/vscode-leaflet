@@ -21,6 +21,13 @@ Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https:
 ![Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
  "Leaflet Map 🗺️ Renderer")
 
+# 🗺️ Examples
+
+Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)  built-in [Notebook 📓 Examples](https://github.com/RandomFractals/vscode-data-table#-examples) to view Leaflet Map 🗺️ with provided sample [Geo datasets](https://github.com/RandomFractals/vscode-data-table/tree/main/data) in that extension. You can access those built-in Notebook 📓 Examples via `Data Table: Notebook Examples` command from `View -> Command Palette...`
+
+![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true 
+ "Data Table 🈸 Notebook Examples")
+
 # Recommended Extensions
 
 Recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):

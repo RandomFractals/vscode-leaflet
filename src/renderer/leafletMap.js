@@ -11,7 +11,7 @@ const tiles = // 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}@2x.png')
 
 export function createMap(geoData, mapContainer) {
   // create leaflet map
-  let map = L.map(mapContainer).setView([47.04, 9.66], 2); // world map center
+  let map = L.map(mapContainer).setView([24.48, 4.48], 1.5); // approximate world map center and zoom for 480px high map
 
   // add tiles layer with attributions
   let tileLayer = L.tileLayer(tiles, {

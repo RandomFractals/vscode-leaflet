@@ -2,6 +2,7 @@
 const htl = require('htl');
 const html = htl.html;
 const L = require('leaflet');
+const markerCluster = require('leaflet.markercluster');
 
 const attribution = `&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, &copy;
 <a href=\"http://cartodb.com/attributions\">CartoDB</a>`;
@@ -21,42 +22,32 @@ export function createMap(geoData, mapContainer) {
     subdomains: 'abc'
   }).addTo(map);
 
-  const markerStyles = html`
-    <style type="text/css">
-      div.popup p { 
-      margin: 4px 0;
-      font-size: 14px;
-    }
-  </style>`;
-
-  // red dot marker
-  const marker = {
-    radius: 6,
-    fillColor: "#ff4e3b",
-    color: "#ff0000",
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-  };
-  
-  // map markers
-  const pointToLayer = function (feature, latlng) {
-    return L.circleMarker(latlng, marker);
-  };
-
   // add markers
-  let geoLayer = L.geoJson(geoData, {
-    pointToLayer: pointToLayer,
-    onEachFeature: function (feature, layer) {
-      const data = feature.properties;
-      const toolTip = data.name;
-      const html = `<div class="popup"><h2>TODO</h2></div>`;
-      layer.bindPopup(html);
-      layer.bindTooltip(toolTip, {sticky: true});
+  let markers = L.markerClusterGroup({
+    maxClusterRadius: 80,
+    // disable all marker cluster defaults:
+		// spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false,
+    iconCreateFunction: function(cluster) {
+      return L.divIcon({
+        className: 'marker-cluster',
+        iconSize: L.point(24, 24),
+        html: `<b>${cluster.getChildCount()}</b>`
+      });
     }
   });
 
-  map.addLayer(geoLayer);
+  // create geo layer
+  let geoLayer = L.geoJson(geoData, {
+    onEachFeature: function (feature, layer) {
+      const data = feature.properties;
+      const html = `<div class="map-popup"><h2>TODO</h2></div>`;
+      layer.bindPopup(html);
+      layer.bindTooltip(`TODO`, {sticky: true});
+    }
+  });
+
+  markers.addLayer(geoLayer);
+  map.addLayer(markers);
   // map.fitBounds(markers.getBounds());
 
   return map;

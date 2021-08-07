@@ -1,6 +1,7 @@
 import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
 import './styles.css';
 import './leaflet.css';
+import './markerCluster.css';
 
 const htl = require('htl');
 const leafletMap = require('./leafletMap.js');
@@ -48,7 +49,7 @@ const leafletMap = require('./leafletMap.js');
     const pre = document.createElement('pre');
     pre.className = 'geo-json';
     const code = document.createElement('code');
-    
+
     if (typeof jsonData !== 'string') {
       // stringify json data
       code.textContent = JSON.stringify(jsonData, null, 2);

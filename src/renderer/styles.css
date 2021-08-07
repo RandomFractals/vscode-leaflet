@@ -9,6 +9,17 @@
   width: 100%;
 }
 
+.marker-cluster {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #636c7d;
+  border-radius: 50%;
+  background-color: #2966cf;
+  color: #eee;
+  text-align: center;
+  padding: 5px;
+}
+
 .geo-json {
   max-height: 360px;
   overflow: auto;

@@ -24,7 +24,7 @@ Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https:
 # Features
 
 - View [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) Notebook 📓 cell ⌗ data output as a Leaflet 🌿 map 🗺️
-- Or as plain text in a crollable container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code):
+- Or as plain text in a scrollable container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code):
 
 ![Leaflet Map 🗺️ GeoJSON](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-geojson.png?raw=true 
  "Leaflet Map 🗺️ GeoJSON")

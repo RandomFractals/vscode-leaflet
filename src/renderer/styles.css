@@ -4,6 +4,11 @@
   overflow: auto;
 }
 
+.map-container {
+  height: 480px;
+  width: 100%;
+}
+
 .geo-json {
   max-height: 360px;
   overflow: auto;

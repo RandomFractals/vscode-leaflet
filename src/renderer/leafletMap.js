@@ -3,15 +3,20 @@ const htl = require('htl');
 const html = htl.html;
 const L = require('leaflet');
 
+const attribution = `&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, &copy;
+<a href=\"http://cartodb.com/attributions\">CartoDB</a>`;
+
+const tiles = // 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}@2x.png')
+  'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png';
+
 export function createMap(geoData, mapContainer) {
-  // create leaflet map with attributions
-  let map = L.map(mapContainer).setView([41.85, -87.68], 10); // Chicago origins
-  let osmLayer = L.tileLayer( // 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}@2x.png')
-    'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors, &copy; <a href=\"http://cartodb.com/attributions\">CartoDB</a>',
+  // create leaflet map
+  let map = L.map(mapContainer).setView([47.04, 9.66], 2); // world map center
+
+  // add tiles layer with attributions
+  let tileLayer = L.tileLayer(tiles, {
+    attribution: attribution,
     detectRetina: false,
-    maxZoom: 18,
-    minZoom: 10,
     noWrap: false,
     subdomains: 'abc'
   }).addTo(map);
@@ -44,9 +49,10 @@ export function createMap(geoData, mapContainer) {
     pointToLayer: pointToLayer,
     onEachFeature: function (feature, layer) {
       const data = feature.properties;
+      const toolTip = data.name;
       const html = `<div class="popup"><h2>TODO</h2></div>`;
       layer.bindPopup(html);
-      layer.bindTooltip(`TODO`, {sticky: true});
+      layer.bindTooltip(toolTip, {sticky: true});
     }
   });
 

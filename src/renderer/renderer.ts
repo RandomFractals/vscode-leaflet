@@ -1,6 +1,6 @@
 import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
 import './styles.css';
-// import './leaflet.css';
+import './leaflet.css';
 
 const htl = require('htl');
 const leafletMap = require('./leafletMap.js');
@@ -27,7 +27,7 @@ const leafletMap = require('./leafletMap.js');
   try {
     jsonData = output.value.json();
   }
-  catch (error) {
+  catch (error: any) {
     console.log('leaflet.map:data: JSON.parse error:\n', error.message);
   }
 
@@ -36,24 +36,31 @@ const leafletMap = require('./leafletMap.js');
     jsonData = jsonData.data;
   }
 
-  // create Geo JSON text output display nodes
-  const pre = document.createElement('pre');
-  pre.className = 'geo-json';
-  const code = document.createElement('code');
   if (jsonData.features) { 
-    // has GeoJSON Features Collection
-    code.textContent = JSON.stringify(jsonData, null, 2);
-
     // create leaflet map and add it to notebook cell output display
-    // const map = leafletMap.createMap(jsonData, output.container);
-    // output.container.appendChild(map);
+    const mapContainer: HTMLDivElement = document.createElement('div');
+    mapContainer.className = 'map-container';
+    output.container.appendChild(mapContainer);
+    const map = leafletMap.createMap(jsonData, mapContainer); //output.container);
   }
   else {
-    // show cell output text
-    code.textContent = output.value.text();
+    // create Geo JSON text output display nodes
+    const pre = document.createElement('pre');
+    pre.className = 'geo-json';
+    const code = document.createElement('code');
+    
+    if (typeof jsonData !== 'string') {
+      // stringify json data
+      code.textContent = JSON.stringify(jsonData, null, 2);
+    }
+    else {
+      // show cell output text
+      code.textContent = output.value.text();
+    }
+
+    pre.appendChild(code);
+    output.container.appendChild(pre);
   }
-  pre.appendChild(code);
-  output.container.appendChild(pre);
 }
 
 if (module.hot) {

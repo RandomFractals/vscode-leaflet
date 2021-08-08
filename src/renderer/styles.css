@@ -20,6 +20,11 @@
   padding: 5px;
 }
 
+.location-info {
+  max-width: 180px;
+  overflow: auto;
+}
+
 .geo-json {
   max-height: 360px;
   overflow: auto;

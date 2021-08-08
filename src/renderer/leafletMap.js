@@ -71,9 +71,7 @@ export function createMap(geoData, mapContainer) {
   // create geo layer
   let geoLayer = L.geoJson(geoData, {
     onEachFeature: function (feature, layer) {
-      const data = feature.properties;
-      const html = `<div class="map-popup"><h2>TODO</h2></div>`;
-      layer.bindPopup(html);
+      layer.bindPopup(createLocationInfoHtml(feature));
       layer.bindTooltip(`TODO`, {sticky: true});
     }
   });
@@ -83,4 +81,27 @@ export function createMap(geoData, mapContainer) {
   // map.fitBounds(markers.getBounds());
 
   return map;
+}
+
+/**
+ * Creates location info html.
+ * @param {*} location Geo location with properties.
+ * @returns Location info html.
+ */
+function createLocationInfoHtml(location) {
+  let locationInfoHtml = '<div class="map-popup">';
+  if (location.properties) {
+    const properties = Object.keys(location.properties);
+    if (properties.length > 0) {
+      locationInfoHtml += '<table class="location-info"><tbody>';
+      properties.map(propertyName => {
+        locationInfoHtml += `<tr><td><b>${propertyName}</b></td><td>${location.properties[propertyName]}</td></tr>`;
+      });
+      locationInfoHtml += '</tbody></table></div>';
+    }    
+  }
+  else {
+    locationInfoHtml += '<h4>No location info provided</h4></div>';
+  }
+  return locationInfoHtml;
 }

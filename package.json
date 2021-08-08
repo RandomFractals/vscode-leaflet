@@ -55,7 +55,10 @@
         "mimeTypes": [
           "application/geo+json",
           "application/topo+json",
-          "application/json"
+          "application/json",
+          "application/vnd.code.notebook.stdout",
+          "text/csv",
+          "text/plain"
         ]
       }
     ]

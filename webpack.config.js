@@ -22,21 +22,17 @@ module.exports = (env, argv) => ({
   },
   module: {
     rules: [
-      // allow importing ts(x) files:
       {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         options: {
           configFile: 'src/renderer/tsconfig.json',
-          // transpileOnly enables hot-module-replacement
           transpileOnly: true,
           compilerOptions: {
-            // overwrite the noEmit from the client's tsconfig
             noEmit: false,
           },
         },
       },
-      // allow importing CSS modules:
       {
         test: /\.css$/,
         use: [
@@ -44,13 +40,15 @@ module.exports = (env, argv) => ({
           'css-loader'
         ],
       },
+      {
+				test: /\.svg$/,
+				loader: 'svg-inline-loader',
+			},      
     ],
   },
   devServer: {
     port: devServerPort,
     hot: true,
-    // disable the host check, otherwise the bundle running in vscode
-    // won't be able to connect to the dev server
     disableHostCheck: true,
     writeToDisk: true,
     headers: { 'Access-Control-Allow-Origin': '*' },

@@ -81,6 +81,7 @@
     "glob": "^7.1.7",
     "mocha": "^9.0.3",
     "style-loader": "^3.2.1",
+    "svg-inline-loader": "^0.8.2",
     "ts-loader": "^9.2.4",
     "typescript": "^4.3.5",
     "vscode-notebook-error-overlay": "^1.0.1",

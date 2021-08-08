@@ -26,7 +26,7 @@ const markerSettings = {
 };
 
 const markerIcon = L.divIcon({
-	className: "leaflet-data-marker",
+	className: 'leaflet-pin-marker',
   html: L.Util.template(markerSvg, markerSettings), //.replace('#','%23'),
   iconAnchor  : [12, 32],
   iconSize    : [25, 30],
@@ -62,7 +62,7 @@ export function createMap(geoData, mapContainer) {
     iconCreateFunction: function(cluster) {
       return L.divIcon({
         className: 'marker-cluster',
-        iconSize: L.point(24, 24),
+        iconSize: L.point(20, 20),
         html: `<b>${cluster.getChildCount()}</b>`
       });
     }

@@ -20,9 +20,18 @@
   padding: 5px;
 }
 
-.location-info {
-  max-width: 180px;
+.map-popup {
+  height: 180px;
   overflow: auto;
+}
+
+.location-info {
+  border-collapse: collapse !important;
+  display: inline-table !important;
+}
+
+.location-info td {
+  border: 1px solid #ccc !important;
 }
 
 .geo-json {

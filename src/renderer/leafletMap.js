@@ -28,9 +28,9 @@ const markerSettings = {
 const markerIcon = L.divIcon({
 	className: 'leaflet-pin-marker',
   html: L.Util.template(markerSvg, markerSettings),
-  iconAnchor  : [12, 42],
+  iconAnchor  : [10, 32],
   iconSize    : [25, 42],
-  popupAnchor : [-2, -40]
+  popupAnchor : [0, -30]
 });
 
 // set default marker icon

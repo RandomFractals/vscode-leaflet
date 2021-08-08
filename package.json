@@ -1,7 +1,7 @@
 {
   "name": "vscode-leaflet",
-  "displayName": "Leaflet Map View",
-  "description": "Leaflet Map View and Notebook Cell Output Renderer",
+  "displayName": "Leaflet Map",
+  "description": "Leaflet 🌿 Map 🗺️ renderer for Notebook 📓 cell ⌗ data outputs",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.58.2"
@@ -26,16 +26,23 @@
   },
   "categories": [
     "Data Science",
+    "Formatters",
     "Education",
+    "Machine Learning",
     "Notebooks",
     "Visualization"
   ],
   "keywords": [
     "leaflet",
     "map",
+    "GeoJSON",
     "view",
     "notebook",
-    "renderer"
+    "cell",
+    "text",
+    "output",
+    "renderer",
+    "examples"
   ],
   "activationEvents": [],
   "main": "./out/extension/extension.js",

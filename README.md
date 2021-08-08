@@ -32,7 +32,7 @@ with [clustered markers](https://github.com/RandomFractals/vscode-leaflet/issues
 
 # 🗺️ Examples
 
-Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)  built-in [Notebook 📓 Examples](https://github.com/RandomFractals/vscode-data-table#-examples) to view Leaflet Map 🗺️ with provided sample [Geo datasets](https://github.com/RandomFractals/vscode-data-table/tree/main/data) in that extension. You can access those built-in Notebook 📓 Examples via `Data Table: Notebook Examples` command from `View -> Command Palette...`
+Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)  built-in [Notebook 📓 Examples](https://github.com/RandomFractals/vscode-data-table#-examples) to view Leaflet Map 🗺️ with provided sample [Geo datasets](https://github.com/RandomFractals/vscode-data-table/tree/main/data). You can access built-in Data Table 🈸 Notebook 📓 Examples via `Data Table: Notebook Examples` command from `View -> Command Palette...`
 
 ![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-data-table/blob/main/docs/images/data-table-notebook-examples.png?raw=true 
  "Data Table 🈸 Notebook Examples")

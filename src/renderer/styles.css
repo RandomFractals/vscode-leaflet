@@ -34,6 +34,11 @@
   border: 1px solid #ccc !important;
 }
 
+.location-info-tooltip {
+  max-height: 84px;
+  overflow-y: hidden;
+}
+
 .geo-json {
   max-height: 360px;
   overflow: auto;

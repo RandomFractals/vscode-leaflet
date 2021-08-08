@@ -72,7 +72,7 @@ export function createMap(geoData, mapContainer) {
   let geoLayer = L.geoJson(geoData, {
     onEachFeature: function (feature, layer) {
       layer.bindPopup(createLocationInfoHtml(feature));
-      layer.bindTooltip(`TODO`, {sticky: true});
+      layer.bindTooltip(createLocationTooltipHtml(feature), {sticky: true});
     }
   });
 
@@ -104,4 +104,31 @@ function createLocationInfoHtml(location) {
     locationInfoHtml += '<h4>No location info provided</h4></div>';
   }
   return locationInfoHtml;
+}
+
+/**
+ * Creates location tootlip html.
+ * @param {*} location Geo location with properties.
+ * @returns Location tooltip html.
+ */
+ function createLocationTooltipHtml(location) {
+  let locationTooltipHtml = '<div class="location-info-tooltip">';
+  if (location.properties) {
+    const properties = Object.keys(location.properties);
+    const propertyCount = properties.length;
+    if ( propertyCount > 0) {
+      for (let i=0; i < 4 && i < propertyCount; i++) {
+        let propertyName = properties[i];
+        locationTooltipHtml += `<span><b>${propertyName}</b>: ${location.properties[propertyName]}</span><br />`;
+      }
+      if (propertyCount >= 4) {
+        locationTooltipHtml += '<span><b>...</b></span>';
+      }
+      locationTooltipHtml += '</div>';
+    }    
+  }
+  else {
+    locationTooltipHtml += '<h4>No location info</h4></div>';
+  }
+  return locationTooltipHtml;
 }

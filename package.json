@@ -57,8 +57,10 @@
           "application/topo+json",
           "application/json",
           "application/vnd.code.notebook.stdout",
+          "application/xml",          
           "text/csv",
-          "text/plain"
+          "text/plain",
+          "text/xml"
         ]
       }
     ]
@@ -103,6 +105,7 @@
   "dependencies": {
     "d3-dsv": "^3.0.1",
     "htl": "^0.3.0",
+    "fast-xml-parser": "^3.19.0",
     "leaflet": "^1.7.1",
     "leaflet.markercluster": "1.5.0"
   }

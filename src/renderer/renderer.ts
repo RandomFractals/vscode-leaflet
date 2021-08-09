@@ -1,4 +1,10 @@
-import type {RendererContext, OutputItem} from 'vscode-notebook-renderer';
+import type {
+  RendererContext, 
+  OutputItem
+} from 'vscode-notebook-renderer';
+
+import {OutputLoader} from './outputLoader';
+
 import './styles.css';
 import './leaflet.css';
 import './markerCluster.css';
@@ -22,43 +28,28 @@ const leafletMap = require('./leafletMap.js');
  */
  export function render(output: IRenderInfo) {
   console.log(`leaflet.map:data:mimeType: ${output.mimeType}`);
-
-  // try to get JSON data
-  let jsonData: any = {};
-  try {
-    jsonData = output.value.json();
-  }
-  catch (error: any) {
-    console.log('leaflet.map:data: JSON.parse error:\n', error.message);
-  }
-
-  if (jsonData.data) {
-    // get JSON data from REST Book output
-    jsonData = jsonData.data;
-  }
-
-  if (jsonData.features) { 
+  const outputLoader: OutputLoader = new OutputLoader(output.value, output.mimeType);
+  let data: any = outputLoader.getData();
+  if (data.features) {  // has geometry features collection
     // create leaflet map and add it to notebook cell output display
     const mapContainer: HTMLDivElement = document.createElement('div');
     mapContainer.className = 'map-container';
     output.container.appendChild(mapContainer);
-    const map = leafletMap.createMap(jsonData, mapContainer); //output.container);
+    const map = leafletMap.createMap(data, mapContainer);
   }
   else {
-    // create Geo JSON text output display nodes
+    // create text output display nodes
     const pre = document.createElement('pre');
-    pre.className = 'geo-json';
+    pre.className = 'text-output';
     const code = document.createElement('code');
-
-    if (typeof jsonData !== 'string') {
+    if (typeof data !== 'string') {
       // stringify json data
-      code.textContent = JSON.stringify(jsonData, null, 2);
+      code.textContent = JSON.stringify(data, null, 2);
     }
     else {
       // show cell output text
       code.textContent = output.value.text();
     }
-
     pre.appendChild(code);
     output.container.appendChild(pre);
   }

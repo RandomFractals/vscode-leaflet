@@ -1,4 +1,7 @@
-import type {ActivationFunction, OutputItem} from 'vscode-notebook-renderer';
+import type {
+  ActivationFunction, 
+  OutputItem
+} from 'vscode-notebook-renderer';
 import errorOverlay from 'vscode-notebook-error-overlay';
 import {render} from './renderer';
 

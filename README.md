@@ -12,7 +12,7 @@
   Leaflet Map 🗺️ for Notebook 📓 cell ⌗ data outputs
 </h1>
 
-See [Geo Data Viewer](https://github.com/RandomFractals/vscode-data-preview) 🗺️ vscode extension for advanced [Geo Data Analytics](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.geo-data-viewer) with [kepler.gl](https://kepler.gl/)
+See [Geo Data Viewer](https://github.com/RandomFractals/geo-data-viewer) 🗺️ vscode extension for advanced [Geo Data Analytics](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.geo-data-viewer) with [kepler.gl](https://kepler.gl/)
 
 ## Leaflet Map 🗺️ Renderer
 

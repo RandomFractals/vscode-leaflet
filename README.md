@@ -26,7 +26,7 @@ Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https:
 
 - View Locations [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) Notebook 📓 cell ⌗ data output in a Leaflet 🌿 map 🗺️ 
 with [clustered markers](https://github.com/RandomFractals/vscode-leaflet/issues/8#issuecomment-894707382), [location information popups](https://github.com/RandomFractals/vscode-leaflet/issues/28#issuecomment-894812944) and [hover tooltips](https://github.com/RandomFractals/vscode-leaflet/issues/30#issuecomment-894824576)
-- View `CSV` and `JSON` text data in a scrollable container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code):
+- View `JSON`, `CSV`, and `XML` data as `JSON` in a scrollable container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code):
 
 ![Leaflet Map 🗺️ Text Output](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-text-output.png?raw=true 
  "Leaflet Map 🗺️ Text Output")

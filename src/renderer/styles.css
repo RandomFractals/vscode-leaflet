@@ -40,8 +40,18 @@
 }
 
 .text-output {
+  background-color: var(--vscode-editor-background);
+  border: 1px solid var(--vscode-panel-border);
+  font-family: var(--vscode-editor-font-family);
+  font-size: var(--vscode-editor-font-size);
+  margin-top: 0px;
   max-height: 360px;
   overflow: auto;
   tab-size: 2;
   white-space: pre-wrap;
+}
+
+.text-output code {
+  color: var(--vscode-editor-foreground) !important;
+  padding-top: 5px;
 }

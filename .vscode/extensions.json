@@ -5,7 +5,8 @@
     "dbaeumer.vscode-eslint",
     "eamodio.tsl-problem-matcher",
     "tanhakabir.rest-book",
+    "RandomFractalsInc.geo-data-viewer",
     "RandomFractalsInc.vscode-data-table",
-    "RandomFractalsInc.geo-data-viewer"
+    "RandomFractalsInc.vscode-data-preview"
   ]
 }

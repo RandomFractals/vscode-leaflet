@@ -54,6 +54,7 @@ Recommended extensions for working with Interactive Notebooks 📚 data 🈸 cha
 | [Geo Data Viewer 🗺️](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.geo-data-viewer) | [kepler.gl](https://kepler.gl) Geo Data Analytics tool to gen. some snazzy 🗺️s  w/0 `Py` 🐍 `pyWidgets` ⚙️ `pandas` 🐼 or `react` ⚛️ |
 | [Vega Viewer 📈](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-vega-viewer) | Provides Interactive Preview of Vega & Vega-Lite maps 🗺️ & graphs 📈 |
 | [DeltaXML XPath Notebook 📓](https://marketplace.visualstudio.com/items?itemName=deltaxml.xpath-notebook) | XPath 3.1 Notebook for Visual Studio Code |
+| [GeoJSON Snippets ⇥](https://marketplace.visualstudio.com/items?itemName=analytic-signal.snippets-geojson) | Create geospatial objects using GeoJSON snippets |
 | [Data Table 🈸](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)| Data Table 🈸 for Notebook 📓 cell ⌗ data outputs |
 
 # Dev Log

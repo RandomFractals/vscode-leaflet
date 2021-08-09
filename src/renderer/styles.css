@@ -49,9 +49,9 @@
   overflow: auto;
   tab-size: 2;
   white-space: pre-wrap;
+  padding: 10px;
 }
 
 .text-output code {
   color: var(--vscode-editor-foreground) !important;
-  padding-top: 5px;
 }

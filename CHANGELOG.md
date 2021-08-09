@@ -2,6 +2,35 @@
 
 See [releases](https://github.com/RandomFractals/vscode-leaflet/releases) for source code and `vscode-leaflet.vsix` extension package download
 
+# v1.1.0 - [2021-08-09]
+
+- [#34](https://github.com/RandomFractals/vscode-leaflet/issues/34)
+Add CSV, XML and JSON data loading
+- [#36](https://github.com/RandomFractals/vscode-leaflet/issues/36)
+Change Geo Data Viewer github repo link in docs
+- [#37](https://github.com/RandomFractals/vscode-leaflet/issues/37)
+Add Geo Data Viewer to recommendations in .vscode/extensions.json
+- [#38](https://github.com/RandomFractals/vscode-leaflet/issues/38)
+Add VS Marketplace badge to docs
+- [#39](https://github.com/RandomFractals/vscode-leaflet/issues/39)
+Add Data Preview to recommendations in .vscode/extensions.json
+- [#40](https://github.com/RandomFractals/vscode-leaflet/issues/40)
+Update dev dependencies and vscode engine to v1.59.0
+- [#41](https://github.com/RandomFractals/vscode-leaflet/issues/41)
+Add GeoJSON snippets to Recommended extensions in docs
+- [#42](https://github.com/RandomFractals/vscode-leaflet/issues/42)
+Add Leaflet logo to the Map extension icon
+- [#43](https://github.com/RandomFractals/vscode-leaflet/issues/43)
+Add d3-dsv library for CSV data parsing
+- [#44](https://github.com/RandomFractals/vscode-leaflet/issues/44)
+Add XML parser for KML and other XML based Geo data formats support
+- [#46](https://github.com/RandomFractals/vscode-leaflet/issues/46)
+Refine Text data ouput styles
+- [#47](https://github.com/RandomFractals/vscode-leaflet/issues/47)
+Add padding to text ouput code display
+- [#48](https://github.com/RandomFractals/vscode-leaflet/issues/48)
+Package and publish dependencies update, data loading and text display enhancements release
+
 # v1.0.0 - [2021-08-08]
 
 - [#1](https://github.com/RandomFractals/vscode-leaflet/issues/1)

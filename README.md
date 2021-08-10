@@ -38,6 +38,19 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 ![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/data-table-notebook-examples.png?raw=true 
  "Data Table 🈸 Notebook Examples")
 
+## .NET Interactive Notebook Example
+
+1. Install [.NET Install Tool for Extension Authors](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.vscode-dotnet-runtime) vscode extension
+
+2. Install [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) 📚 vscode extension
+
+3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-speed-cameras.ipynb) .NET Interactive Notebook 📓
+
+4. Run All cells ⌗:
+
+![USA Airports .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-net-notebook.png?raw=true 
+ "USA Airports .NET Interactive Notebook 📓")
+
 # Recommended Extensions
 
 Recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):

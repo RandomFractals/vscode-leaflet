@@ -44,7 +44,7 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 
 2. Install [.NET Interactive Notebooks](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode) 📚 vscode extension
 
-3. Load [USA Airports](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/chicago-speed-cameras.ipynb) .NET Interactive Notebook 📓
+3. Load [USA Airports](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/usa-airports-net.ipynb) .NET Interactive Notebook 📓
 
 4. Run All cells ⌗:
 

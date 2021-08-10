@@ -51,6 +51,19 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 ![USA Airports .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-net-notebook.png?raw=true 
  "USA Airports .NET Interactive Notebook 📓")
 
+## TypeScript Notebook Example
+
+1. Install [TypeScript Notebooks](https://marketplace.visualstudio.com/items?itemName=donjayamanne.typescript-notebook) 📚 vscode extension
+
+2. Download [USA State Capitals `GeoJSON`](https://github.com/RandomFractals/vscode-leaflet/tree/main/data/geojson/usa-state-capitals.geojson) data file
+
+3. Load [USA State Capitals](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports.ipynb) TypeScript Notebook 📓
+
+4. Run All cells ⌗ to view that `GeoJSON` data output in a Leaflet 🌿 Map 🗺️:
+
+![USA State Capitals TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-typescript-notebook.png?raw=true 
+ "USA State Capitals TypeScript Notebook 📓")
+
 # Recommended Extensions
 
 Recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):

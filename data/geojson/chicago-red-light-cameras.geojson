@@ -1,0 +1,2838 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Milwaukee-Devon",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "02/28/2009",
+        "Latitude": "41.997407",
+        "Longitude": "-87.787921",
+        "Location": "(41.997407, -87.787921)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.787921,
+          41.997407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "California-Peterson",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/29/2009",
+        "Latitude": "41.990442",
+        "Longitude": "-87.699401",
+        "Location": "(41.990442, -87.699401)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.699401,
+          41.990442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Addison",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/15/2010",
+        "Latitude": "41.945877",
+        "Longitude": "-87.766754",
+        "Location": "(41.945877, -87.766754)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.766754,
+          41.945877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-63rd",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/12/2007",
+        "Latitude": "41.779214",
+        "Longitude": "-87.683638",
+        "Location": "(41.779214, -87.683638)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.683638,
+          41.779214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-79th",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "04/30/2008",
+        "Latitude": "41.750643",
+        "Longitude": "-87.644043",
+        "Location": "(41.750643, -87.644043)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.644043,
+          41.750643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Wacker-Lake",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "02/19/2018",
+        "Latitude": "41.8857",
+        "Longitude": "-87.637",
+        "Location": "(41.8857, -87.637)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.637,
+          41.8857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Laramie-Fullerton",
+        "First Approach": "WB",
+        "Second Aproach": "NB",
+        "Go Live Date": "06/28/2008",
+        "Latitude": "41.924106",
+        "Longitude": "-87.756147",
+        "Location": "(41.924106, -87.756147)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.756147,
+          41.924106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Lafayette-87th",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "08/31/2009",
+        "Latitude": "41.736271",
+        "Longitude": "-87.625445",
+        "Location": "(41.736271, -87.625445)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.625445,
+          41.736271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Canal-Roosevelt",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/30/2008",
+        "Latitude": "41.867252",
+        "Longitude": "-87.639216",
+        "Location": "(41.867252, -87.639216)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.639216,
+          41.867252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Fullerton",
+        "First Approach": "WB",
+        "Second Aproach": "NB",
+        "Go Live Date": "05/19/2007",
+        "Latitude": "41.924484",
+        "Longitude": "-87.726769",
+        "Location": "(41.924484, -87.726769)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.726769,
+          41.924484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Stony Island-Cornell-67th",
+        "First Approach": "NB",
+        "Second Aproach": "NB",
+        "Go Live Date": "11/26/2007",
+        "Latitude": "41.77334",
+        "Longitude": "-87.586295",
+        "Location": "(41.77334, -87.586295)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.586295,
+          41.77334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-North",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/26/2007",
+        "Latitude": "41.91032",
+        "Longitude": "-87.687222",
+        "Location": "(41.91032, -87.687222)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.687222,
+          41.91032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cottage Grove-71st-South Chicago",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "04/30/2008",
+        "Latitude": "41.765868",
+        "Longitude": "-87.605586",
+        "Location": "(41.765868, -87.605586)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.605586,
+          41.765868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Wentworth-Garfield",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "05/08/2008",
+        "Latitude": "41.794201",
+        "Longitude": "-87.630518",
+        "Location": "(41.794201, -87.630518)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.630518,
+          41.794201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "State-63rd",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "01/18/2006",
+        "Latitude": "41.780058",
+        "Longitude": "-87.625374",
+        "Location": "(41.780058, -87.625374)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.625374,
+          41.780058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-Division",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/25/2007",
+        "Latitude": "41.903347",
+        "Longitude": "-87.667496",
+        "Location": "(41.903347, -87.667496)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.667496,
+          41.903347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Fullerton",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "02/25/2006",
+        "Latitude": "41.924237",
+        "Longitude": "-87.746302",
+        "Location": "(41.924237, -87.746302)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.746302,
+          41.924237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Washington",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "06/14/2008",
+        "Latitude": "41.881815",
+        "Longitude": "-87.745339",
+        "Location": "(41.881815, -87.745339)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.745339,
+          41.881815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Sacramento-Chicago",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "09/18/2009",
+        "Latitude": "41.895591",
+        "Longitude": "-87.702455",
+        "Location": "(41.895591, -87.702455)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.702455,
+          41.895591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Fullerton",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/05/2007",
+        "Latitude": "41.92398",
+        "Longitude": "-87.765989",
+        "Location": "(41.92398, -87.765989)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.765989,
+          41.92398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Lawrence",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "07/31/2008",
+        "Latitude": "41.968614",
+        "Longitude": "-87.688906",
+        "Location": "(41.968614, -87.688906)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.688906,
+          41.968614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Irving Park",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "05/19/2009",
+        "Latitude": "41.953646",
+        "Longitude": "-87.727617",
+        "Location": "(41.953646, -87.727617)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.727617,
+          41.953646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-Armitage",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "01/23/2009",
+        "Latitude": "41.917402",
+        "Longitude": "-87.706965",
+        "Location": "(41.917402, -87.706965)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.706965,
+          41.917402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Diversey",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "02/11/2010",
+        "Latitude": "41.931533",
+        "Longitude": "-87.746595",
+        "Location": "(41.931533, -87.746595)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.746595,
+          41.931533
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Milwaukee-Montrose",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "03/11/2010",
+        "Latitude": "41.960632",
+        "Longitude": "-87.754476",
+        "Location": "(41.960632, -87.754476)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.754476,
+          41.960632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Diversey-Elston",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "07/18/2008",
+        "Latitude": "41.932179",
+        "Longitude": "-87.687883",
+        "Location": "(41.932179, -87.687883)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.687883,
+          41.932179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Fullerton",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "06/29/2009",
+        "Latitude": "41.9249",
+        "Longitude": "-87.687641",
+        "Location": "(41.9249, -87.687641)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.687641,
+          41.9249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Milwaukee-Diversey",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/29/2009",
+        "Latitude": "41.931984",
+        "Longitude": "-87.712251",
+        "Location": "(41.931984, -87.712251)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.712251,
+          41.931984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-26th",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "11/02/2010",
+        "Latitude": "41.844518",
+        "Longitude": "-87.705042",
+        "Location": "(41.844518, -87.705042)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.705042,
+          41.844518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-87th",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "03/31/2007",
+        "Latitude": "41.735788",
+        "Longitude": "-87.663063",
+        "Location": "(41.735788, -87.663063)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.663063,
+          41.735788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Diversey",
+        "First Approach": "SB",
+        "Second Aproach": "NB",
+        "Go Live Date": "05/15/2009",
+        "Latitude": "41.931791",
+        "Longitude": "-87.726979",
+        "Location": "(41.931791, -87.726979)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.726979,
+          41.931791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-63rd",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/26/2007",
+        "Latitude": "41.778972",
+        "Longitude": "-87.703138",
+        "Location": "(41.778972, -87.703138)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.703138,
+          41.778972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Michigan-Ontario",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "01/22/2018",
+        "Latitude": "41.893268",
+        "Longitude": "-87.624038",
+        "Location": "(41.893268, -87.624038)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.624038,
+          41.893268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Cermak",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "12/29/2009",
+        "Latitude": "41.852031",
+        "Longitude": "-87.685639",
+        "Location": "(41.852031, -87.685639)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.685639,
+          41.852031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Sheridan-Foster",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "01/26/2008",
+        "Latitude": "41.976396",
+        "Longitude": "-87.654993",
+        "Location": "(41.976396, -87.654993)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.654993,
+          41.976396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Belmont",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "05/19/2007",
+        "Latitude": "41.939094",
+        "Longitude": "-87.727185",
+        "Location": "(41.939094, -87.727185)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.727185,
+          41.939094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-North",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/30/2008",
+        "Latitude": "41.909886",
+        "Longitude": "-87.72633",
+        "Location": "(41.909886, -87.72633)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.72633,
+          41.909886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Stony Island-79th-South Chicago",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Third Approach": "NB",
+        "Go Live Date": "05/07/2007",
+        "Latitude": "41.751506",
+        "Longitude": "-87.585823",
+        "Location": "(41.751506, -87.585823)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.585823,
+          41.751506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Damen-63rd",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "05/31/2008",
+        "Latitude": "41.779315",
+        "Longitude": "-87.673906",
+        "Location": "(41.779315, -87.673906)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.673906,
+          41.779315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-North",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "05/31/2008",
+        "Latitude": "41.909626",
+        "Longitude": "-87.746112",
+        "Location": "(41.909626, -87.746112)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.746112,
+          41.909626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Broadway-Sheridan-Devon",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/18/2007",
+        "Latitude": "41.99819",
+        "Longitude": "-87.660545",
+        "Location": "(41.99819, -87.660545)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.660545,
+          41.99819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-47th",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "03/30/2008",
+        "Latitude": "41.808115",
+        "Longitude": "-87.703974",
+        "Location": "(41.808115, -87.703974)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.703974,
+          41.808115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Archer-50th",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/31/2007",
+        "Latitude": "41.802317",
+        "Longitude": "-87.723422",
+        "Location": "(41.802317, -87.723422)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.723422,
+          41.802317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Elston-Lawrence",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "06/08/2009",
+        "Latitude": "41.968108",
+        "Longitude": "-87.740163",
+        "Location": "(41.968108, -87.740163)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.740163,
+          41.968108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Damen-Division",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "12/29/2009",
+        "Latitude": "41.903191",
+        "Longitude": "-87.677258",
+        "Location": "(41.903191, -87.677258)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.677258,
+          41.903191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Clark-Irving Park",
+        "First Approach": "EB",
+        "Second Aproach": "NB",
+        "Go Live Date": "07/22/2008",
+        "Latitude": "41.954378",
+        "Longitude": "-87.662248",
+        "Location": "(41.954378, -87.662248)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.662248,
+          41.954378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-71st",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/11/2004",
+        "Latitude": "41.76491",
+        "Longitude": "-87.663794",
+        "Location": "(41.76491, -87.663794)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.663794,
+          41.76491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Hamlin-Lake",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "05/31/2008",
+        "Latitude": "41.885203",
+        "Longitude": "-87.720919",
+        "Location": "(41.885203, -87.720919)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.720919,
+          41.885203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Austin-Irving Park",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/30/2008",
+        "Latitude": "41.953055",
+        "Longitude": "-87.776775",
+        "Location": "(41.953055, -87.776775)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.776775,
+          41.953055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-63rd",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "03/31/2007",
+        "Latitude": "41.778658",
+        "Longitude": "-87.722759",
+        "Location": "(41.778658, -87.722759)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.722759,
+          41.778658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Laramie-Madison",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "05/11/2011",
+        "Latitude": "41.880371",
+        "Longitude": "-87.755065",
+        "Location": "(41.880371, -87.755065)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.755065,
+          41.880371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Osceola-Touhy",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/21/2008",
+        "Latitude": "42.011553",
+        "Longitude": "-87.812251",
+        "Location": "(42.011553, -87.812251)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.812251,
+          42.011553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Armitage",
+        "First Approach": "WB",
+        "Second Aproach": "EB",
+        "Go Live Date": "05/31/2008",
+        "Latitude": "41.917165",
+        "Longitude": "-87.726559",
+        "Location": "(41.917165, -87.726559)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.726559,
+          41.917165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "California-Devon",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "07/31/2008",
+        "Latitude": "41.997559",
+        "Longitude": "-87.699643",
+        "Location": "(41.997559, -87.699643)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.699643,
+          41.997559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Chicago",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "02/20/2010",
+        "Latitude": "41.895367",
+        "Longitude": "-87.726078",
+        "Location": "(41.895367, -87.726078)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.726078,
+          41.895367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Damen-Elston",
+        "First Approach": "SB",
+        "Go Live Date": "02/17/2006",
+        "Latitude": "41.925816",
+        "Longitude": "-87.677898",
+        "Location": "(41.925816, -87.677898)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.677898,
+          41.925816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Madison",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "06/01/2004",
+        "Latitude": "41.881161",
+        "Longitude": "-87.686432",
+        "Location": "(41.881161, -87.686432)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.686432,
+          41.881161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Dr Martin Luther King-31st",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/22/2008",
+        "Latitude": "41.838419",
+        "Longitude": "-87.617465",
+        "Location": "(41.838419, -87.617465)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.617465,
+          41.838419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Roosevelt",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "07/17/2009",
+        "Latitude": "41.866172",
+        "Longitude": "-87.725169",
+        "Location": "(41.866172, -87.725169)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.725169,
+          41.866172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-95th",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/26/2009",
+        "Latitude": "41.721214",
+        "Longitude": "-87.662684",
+        "Location": "(41.721214, -87.662684)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.662684,
+          41.721214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-95th",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "04/30/2008",
+        "Latitude": "41.721458",
+        "Longitude": "-87.643212",
+        "Location": "(41.721458, -87.643212)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.643212,
+          41.721458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Damen-Diversey-Clybourn",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "06/30/2008",
+        "Latitude": "41.932285",
+        "Longitude": "-87.678136",
+        "Location": "(41.932285, -87.678136)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.678136,
+          41.932285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Division",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "07/22/2009",
+        "Latitude": "41.902671",
+        "Longitude": "-87.726303",
+        "Location": "(41.902671, -87.726303)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.726303,
+          41.902671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kostner-Grand-North",
+        "First Approach": "EB",
+        "Second Aproach": "NB",
+        "Third Approach": "SB",
+        "Go Live Date": "03/11/2004",
+        "Latitude": "41.909754",
+        "Longitude": "-87.736262",
+        "Location": "(41.909754, -87.736262)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.736262,
+          41.909754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Addison",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/08/2009",
+        "Latitude": "41.946731",
+        "Longitude": "-87.688258",
+        "Location": "(41.946731, -87.688258)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.688258,
+          41.946731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-47th",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "03/31/2008",
+        "Latitude": "41.807623",
+        "Longitude": "-87.743153",
+        "Location": "(41.807623, -87.743153)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.743153,
+          41.807623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Hamlin-Madison",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "04/29/2009",
+        "Latitude": "41.880789",
+        "Longitude": "-87.720752",
+        "Location": "(41.880789, -87.720752)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.720752,
+          41.880789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Michigan-Jackson",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "01/22/2018",
+        "Latitude": "41.878246",
+        "Longitude": "-87.624087",
+        "Location": "(41.878246, -87.624087)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.624087,
+          41.878246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Sheridan-Hollywood",
+        "First Approach": "WB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/18/2007",
+        "Latitude": "41.985549",
+        "Longitude": "-87.655242",
+        "Location": "(41.985549, -87.655242)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.655242,
+          41.985549
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Northwest Hwy-Foster",
+        "First Approach": "SEB",
+        "Second Aproach": "EB",
+        "Go Live Date": "09/29/2017",
+        "Latitude": "41.975688",
+        "Longitude": "-87.769261",
+        "Location": "(41.975688, -87.769261)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.769261,
+          41.975688
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-99th",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "01/01/2006",
+        "Latitude": "41.714215",
+        "Longitude": "-87.643004",
+        "Location": "(41.714215, -87.643004)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.643004,
+          41.714215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Armitage",
+        "First Approach": "EB",
+        "Second Aproach": "NB",
+        "Go Live Date": "11/14/2008",
+        "Latitude": "41.916931",
+        "Longitude": "-87.746111",
+        "Location": "(41.916931, -87.746111)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.746111,
+          41.916931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-Lawrence",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "08/27/2008",
+        "Latitude": "41.968876",
+        "Longitude": "-87.66944",
+        "Location": "(41.968876, -87.66944)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.66944,
+          41.968876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "LaSalle-Kinzie",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "04/30/2004",
+        "Latitude": "41.889187",
+        "Longitude": "-87.632526",
+        "Location": "(41.889187, -87.632526)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.632526,
+          41.889187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Chicago",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "05/07/2007",
+        "Latitude": "41.895743",
+        "Longitude": "-87.686843",
+        "Location": "(41.895743, -87.686843)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.686843,
+          41.895743
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Austin-Addison",
+        "First Approach": "EB",
+        "Second Aproach": "NB",
+        "Go Live Date": "06/28/2008",
+        "Latitude": "41.945771",
+        "Longitude": "-87.776504",
+        "Location": "(41.945771, -87.776504)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.776504,
+          41.945771
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-Division",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "04/07/2004",
+        "Latitude": "41.903636",
+        "Longitude": "-87.648094",
+        "Location": "(41.903636, -87.648094)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.648094,
+          41.903636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-111th",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "01/01/2006",
+        "Latitude": "41.692355",
+        "Longitude": "-87.642377",
+        "Location": "(41.692355, -87.642377)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.642377,
+          41.692355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Lake Shore-Belmont",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/22/2008",
+        "Latitude": "41.94024",
+        "Longitude": "-87.638696",
+        "Location": "(41.94024, -87.638696)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.638696,
+          41.94024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-79th",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "05/07/2007",
+        "Latitude": "41.750101",
+        "Longitude": "-87.682847",
+        "Location": "(41.750101, -87.682847)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.682847,
+          41.750101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-47th",
+        "First Approach": "SB",
+        "Second Aproach": "NB",
+        "Go Live Date": "11/29/2004",
+        "Latitude": "41.808426",
+        "Longitude": "-87.684425",
+        "Location": "(41.808426, -87.684425)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.684425,
+          41.808426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Lawrence",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "07/31/2008",
+        "Latitude": "41.968242",
+        "Longitude": "-87.728027",
+        "Location": "(41.968242, -87.728027)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.728027,
+          41.968242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-55th",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/01/2003",
+        "Latitude": "41.793877",
+        "Longitude": "-87.68404",
+        "Location": "(41.793877, -87.68404)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.68404,
+          41.793877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-71st",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "09/17/2009",
+        "Latitude": "41.76439",
+        "Longitude": "-87.702811",
+        "Location": "(41.76439, -87.702811)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.702811,
+          41.76439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Peterson",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "08/26/2008",
+        "Latitude": "41.989898",
+        "Longitude": "-87.748325",
+        "Location": "(41.989898, -87.748325)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.748325,
+          41.989898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "California-Irving Park",
+        "First Approach": "WB",
+        "Second Aproach": "EB",
+        "Go Live Date": "08/26/2008",
+        "Latitude": "41.953973",
+        "Longitude": "-87.69824",
+        "Location": "(41.953973, -87.69824)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.69824,
+          41.953973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Clark-Fullerton",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "06/27/2007",
+        "Latitude": "41.925585",
+        "Longitude": "-87.64048",
+        "Location": "(41.925585, -87.64048)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.64048,
+          41.925585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Harrison",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/19/2009",
+        "Latitude": "41.873141",
+        "Longitude": "-87.745",
+        "Location": "(41.873141, -87.745)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.745,
+          41.873141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Van Buren",
+        "First Approach": "WB",
+        "Second Aproach": "SB",
+        "Go Live Date": "05/29/2008",
+        "Latitude": "41.876083",
+        "Longitude": "-87.686271",
+        "Location": "(41.876083, -87.686271)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.686271,
+          41.876083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Harlem-Belmont",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "06/18/2007",
+        "Latitude": "41.937997",
+        "Longitude": "-87.806746",
+        "Location": "(41.937997, -87.806746)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.806746,
+          41.937997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Touhy",
+        "First Approach": "SB",
+        "Second Aproach": "NB",
+        "Go Live Date": "10/21/2008",
+        "Latitude": "42.012279",
+        "Longitude": "-87.690246",
+        "Location": "(42.012279, -87.690246)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.690246,
+          42.012279
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Narragansett-Irving Park",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/14/2004",
+        "Latitude": "41.952916",
+        "Longitude": "-87.786558",
+        "Location": "(41.952916, -87.786558)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.786558,
+          41.952916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-Cortland",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "02/26/2006",
+        "Latitude": "41.916128",
+        "Longitude": "-87.6678",
+        "Location": "(41.916128, -87.6678)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.6678,
+          41.916128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Diversey",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "08/18/2009",
+        "Latitude": "41.931278",
+        "Longitude": "-87.766248",
+        "Location": "(41.931278, -87.766248)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.766248,
+          41.931278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Foster",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "06/05/2007",
+        "Latitude": "41.97589",
+        "Longitude": "-87.689148",
+        "Location": "(41.97589, -87.689148)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.689148,
+          41.97589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Vincennes-87th",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/11/2004",
+        "Latitude": "41.73605",
+        "Longitude": "-87.645174",
+        "Location": "(41.73605, -87.645174)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.645174,
+          41.73605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kilpatrick-Irving Park",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/21/2008",
+        "Latitude": "41.953446",
+        "Longitude": "-87.745578",
+        "Location": "(41.953446, -87.745578)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.745578,
+          41.953446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-Belmont",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Third Approach": "NB",
+        "Go Live Date": "03/01/2004",
+        "Latitude": "41.93933",
+        "Longitude": "-87.707696",
+        "Location": "(41.93933, -87.707696)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.707696,
+          41.93933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Lawrence",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "11/02/2004",
+        "Latitude": "41.968029",
+        "Longitude": "-87.74772",
+        "Location": "(41.968029, -87.74772)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.74772,
+          41.968029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Chicago",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "05/28/2010",
+        "Latitude": "41.894852",
+        "Longitude": "-87.765395",
+        "Location": "(41.894852, -87.765395)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.765395,
+          41.894852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-79th-Columbus",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "01/10/2006",
+        "Latitude": "41.749842",
+        "Longitude": "-87.702396",
+        "Location": "(41.749842, -87.702396)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.702396,
+          41.749842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-31st",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "05/23/2008",
+        "Latitude": "41.837231",
+        "Longitude": "-87.704823",
+        "Location": "(41.837231, -87.704823)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.704823,
+          41.837231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-Fullerton",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "06/08/2009",
+        "Latitude": "41.92515",
+        "Longitude": "-87.668144",
+        "Location": "(41.92515, -87.668144)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.668144,
+          41.92515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Damen-Fullerton",
+        "First Approach": "EB",
+        "Go Live Date": "02/17/2006",
+        "Latitude": "41.925025",
+        "Longitude": "-87.677898",
+        "Location": "(41.925025, -87.677898)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.677898,
+          41.925025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Belmont",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "02/05/2009",
+        "Latitude": "41.938573",
+        "Longitude": "-87.766499",
+        "Location": "(41.938573, -87.766499)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.766499,
+          41.938573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Clark-Chicago",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/22/2010",
+        "Latitude": "41.896635",
+        "Longitude": "-87.631243",
+        "Location": "(41.896635, -87.631243)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.631243,
+          41.896635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Elston-Addison",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/19/2007",
+        "Latitude": "41.946622",
+        "Longitude": "-87.708841",
+        "Location": "(41.946622, -87.708841)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.708841,
+          41.946622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kostner-Roosevelt",
+        "First Approach": "EB",
+        "Second Aproach": "NB",
+        "Go Live Date": "03/18/2004",
+        "Latitude": "41.866031",
+        "Longitude": "-87.734965",
+        "Location": "(41.866031, -87.734965)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.734965,
+          41.866031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Sacramento-Lake",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "10/20/2009",
+        "Latitude": "41.884075",
+        "Longitude": "-87.701291",
+        "Location": "(41.884075, -87.701291)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.701291,
+          41.884075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Stony Island-76th",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "11/30/2008",
+        "Latitude": "41.756944",
+        "Longitude": "-87.58609",
+        "Location": "(41.756944, -87.58609)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.58609,
+          41.756944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Austin-Diversey",
+        "First Approach": "WB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/28/2008",
+        "Latitude": "41.931139",
+        "Longitude": "-87.775966",
+        "Location": "(41.931139, -87.775966)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.775966,
+          41.931139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Devon",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "07/31/2008",
+        "Latitude": "41.99773",
+        "Longitude": "-87.689881",
+        "Location": "(41.99773, -87.689881)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.689881,
+          41.99773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-Roosevelt",
+        "First Approach": "WB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/14/2008",
+        "Latitude": "41.867152",
+        "Longitude": "-87.646919",
+        "Location": "(41.867152, -87.646919)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.646919,
+          41.867152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-Fullerton-Lincoln",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "08/31/2008",
+        "Latitude": "41.925454",
+        "Longitude": "-87.64876",
+        "Location": "(41.925454, -87.64876)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.64876,
+          41.925454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "State-75th",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "08/28/2009",
+        "Latitude": "41.75818",
+        "Longitude": "-87.624757",
+        "Location": "(41.75818, -87.624757)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.624757,
+          41.75818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Lake",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "07/17/2009",
+        "Latitude": "41.887729",
+        "Longitude": "-87.76512",
+        "Location": "(41.887729, -87.76512)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.76512,
+          41.887729
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-Madison",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "03/06/2004",
+        "Latitude": "41.881454",
+        "Longitude": "-87.666802",
+        "Location": "(41.881454, -87.666802)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.666802,
+          41.881454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Narragansett-Fullerton",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/14/2008",
+        "Latitude": "41.923676",
+        "Longitude": "-87.785441",
+        "Location": "(41.923676, -87.785441)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.785441,
+          41.923676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Nagle-Foster",
+        "First Approach": "WB",
+        "Second Aproach": "NB",
+        "Go Live Date": "10/14/2004",
+        "Latitude": "41.975652",
+        "Longitude": "-87.787872",
+        "Location": "(41.975652, -87.787872)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.787872,
+          41.975652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Archer",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/13/2007",
+        "Latitude": "41.798659",
+        "Longitude": "-87.742927",
+        "Location": "(41.798659, -87.742927)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.742927,
+          41.798659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "California-Diversey",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Third Approach": "EB",
+        "Go Live Date": "01/31/2006",
+        "Latitude": "41.932096",
+        "Longitude": "-87.697616",
+        "Location": "(41.932096, -87.697616)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.697616,
+          41.932096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Laramie-Irving Park",
+        "First Approach": "EB",
+        "Second Aproach": "WB",
+        "Go Live Date": "01/27/2010",
+        "Latitude": "41.953299",
+        "Longitude": "-87.757148",
+        "Location": "(41.953299, -87.757148)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.757148,
+          41.953299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Elston-Irving Park",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "08/12/2009",
+        "Latitude": "41.95373",
+        "Longitude": "-87.719084",
+        "Location": "(41.95373, -87.719084)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.719084,
+          41.95373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Peterson",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "02/26/2004",
+        "Latitude": "41.9905",
+        "Longitude": "-87.689671",
+        "Location": "(41.9905, -87.689671)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.689671,
+          41.9905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kedzie-55th",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/20/2009",
+        "Latitude": "41.793513",
+        "Longitude": "-87.703553",
+        "Location": "(41.793513, -87.703553)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.703553,
+          41.793513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Cermak",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/11/2004",
+        "Latitude": "41.851546",
+        "Longitude": "-87.724757",
+        "Location": "(41.851546, -87.724757)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.724757,
+          41.851546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Ashland-Irving Park",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "08/26/2008",
+        "Latitude": "41.954291",
+        "Longitude": "-87.669047",
+        "Location": "(41.954291, -87.669047)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.669047,
+          41.954291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Marquette",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/30/2008",
+        "Latitude": "41.771977",
+        "Longitude": "-87.683443",
+        "Location": "(41.771977, -87.683443)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.683443,
+          41.771977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-North",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "06/29/2009",
+        "Latitude": "41.91092",
+        "Longitude": "-87.648273",
+        "Location": "(41.91092, -87.648273)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.648273,
+          41.91092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Irving Park",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/30/2008",
+        "Latitude": "41.953183",
+        "Longitude": "-87.766998",
+        "Location": "(41.953183, -87.766998)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.766998,
+          41.953183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-79th",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "09/17/2009",
+        "Latitude": "41.749569",
+        "Longitude": "-87.721913",
+        "Location": "(41.749569, -87.721913)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.721913,
+          41.749569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-Foster",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "10/18/2007",
+        "Latitude": "41.975532",
+        "Longitude": "-87.728234",
+        "Location": "(41.975532, -87.728234)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.728234,
+          41.975532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Chicago",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/05/2007",
+        "Latitude": "41.895003",
+        "Longitude": "-87.745805",
+        "Location": "(41.895003, -87.745805)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.745805,
+          41.895003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Illinois-Columbus",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "10/28/2010",
+        "Latitude": "41.891002",
+        "Longitude": "-87.620224",
+        "Location": "(41.891002, -87.620224)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.620224,
+          41.891002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Central-Milwaukee",
+        "First Approach": "SB",
+        "Second Aproach": "SEB",
+        "Go Live Date": "09/29/2017",
+        "Latitude": "41.976514",
+        "Longitude": "-87.768467",
+        "Location": "(41.976514, -87.768467)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.768467,
+          41.976514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "State-79th",
+        "First Approach": "WB",
+        "Second Aproach": "NB",
+        "Go Live Date": "06/26/2009",
+        "Latitude": "41.750958",
+        "Longitude": "-87.624547",
+        "Location": "(41.750958, -87.624547)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.624547,
+          41.750958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Kostner-Ogden",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "05/23/2008",
+        "Latitude": "41.847697",
+        "Longitude": "-87.734387",
+        "Location": "(41.847697, -87.734387)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.734387,
+          41.847697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Clark-Ridge",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "07/23/2008",
+        "Latitude": "41.989697",
+        "Longitude": "-87.669985",
+        "Location": "(41.989697, -87.669985)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.669985,
+          41.989697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Pulaski-55th",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/19/2004",
+        "Latitude": "41.793205",
+        "Longitude": "-87.72316",
+        "Location": "(41.793205, -87.72316)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.72316,
+          41.793205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-Montrose",
+        "First Approach": "NB",
+        "Second Aproach": "WB",
+        "Go Live Date": "08/26/2008",
+        "Latitude": "41.961313",
+        "Longitude": "-87.688681",
+        "Location": "(41.961313, -87.688681)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.688681,
+          41.961313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Jeffery-95th",
+        "First Approach": "SB",
+        "Second Aproach": "EB",
+        "Go Live Date": "11/26/2007",
+        "Latitude": "41.722468",
+        "Longitude": "-87.575353",
+        "Location": "(41.722468, -87.575353)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.575353,
+          41.722468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-Madison",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "06/14/2008",
+        "Latitude": "41.881776",
+        "Longitude": "-87.647361",
+        "Location": "(41.881776, -87.647361)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.647361,
+          41.881776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Broadway-Foster",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/18/2007",
+        "Latitude": "41.976323",
+        "Longitude": "-87.659867",
+        "Location": "(41.976323, -87.659867)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.659867,
+          41.976323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Homan-Kimball-North",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "10/05/2007",
+        "Latitude": "41.910053",
+        "Longitude": "-87.711879",
+        "Location": "(41.910053, -87.711879)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.711879,
+          41.910053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Western-35th",
+        "First Approach": "SB",
+        "Second Aproach": "NB",
+        "Go Live Date": "10/11/2004",
+        "Latitude": "41.83028",
+        "Longitude": "-87.685033",
+        "Location": "(41.83028, -87.685033)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.685033,
+          41.83028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Halsted-119th",
+        "First Approach": "SB",
+        "Second Aproach": "WB",
+        "Go Live Date": "11/02/2004",
+        "Latitude": "41.677815",
+        "Longitude": "-87.641907",
+        "Location": "(41.677815, -87.641907)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.641907,
+          41.677815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Addison",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "11/30/2008",
+        "Latitude": "41.946124",
+        "Longitude": "-87.747064",
+        "Location": "(41.946124, -87.747064)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.747064,
+          41.946124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Harlem-Addison",
+        "First Approach": "NB",
+        "Second Aproach": "EB",
+        "Go Live Date": "06/21/2009",
+        "Latitude": "41.945264",
+        "Longitude": "-87.807006",
+        "Location": "(41.945264, -87.807006)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.807006,
+          41.945264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Intersection": "Cicero-Stevenson NB (SOUTH INTERSECTION)",
+        "First Approach": "NB",
+        "Second Aproach": "SB",
+        "Go Live Date": "04/29/2009",
+        "Latitude": "41.817092",
+        "Longitude": "-87.743477",
+        "Location": "(41.817092, -87.743477)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.743477,
+          41.817092
+        ]
+      }
+    }
+  ]
+}

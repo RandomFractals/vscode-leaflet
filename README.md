@@ -83,7 +83,7 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 
 2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/chicago-red-light-cameras-pyolite.ipynb) Pyolite Notebook 📓
 
-3. Run All cells ⌗:
+3. Run Python code cell and click on `...` -> `Choose Output Mimetype` -> `text/plain` Leaflet Map to view red light camera locations on the map 🗺️: 
 
 ![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-pyolite-notebook.png?raw=true 
  "Chicago Red Light Cameras Pyolite Notebook 📓")

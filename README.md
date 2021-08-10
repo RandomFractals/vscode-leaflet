@@ -2,6 +2,8 @@
 
 [![Apache-2.0 License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](http://opensource.org/licenses/Apache-2.0)
 [![Version](https://vsmarketplacebadge.apphb.com/version-short/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
+[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
 <a href='https://ko-fi.com/dataPixy' target='_blank' title='support: https://ko-fi.com/dataPixy'>
   <img height='24' style='border:0px;height:20px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' alt='https://ko-fi.com/dataPixy' />
 </a>

@@ -64,6 +64,19 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 ![USA State Capitals TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-typescript-notebook.png?raw=true 
  "USA State Capitals TypeScript Notebook 📓")
 
+### REST Book Example
+
+1. Install [REST Book](https://marketplace.visualstudio.com/items?itemName=tanhakabir.rest-book) 📓 vscode extension
+
+2. Load [World Cities](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/world-cities.restbook) REST Book 📓
+
+3. Run All cells ⌗
+
+4. Click on `...` in the gutter of `GET` data output and change it to Leaflet Map 🗺️ renderer:
+
+![World Cities REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
+ "World Cities REST Book 📓")
+
 # Recommended Extensions
 
 Recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):

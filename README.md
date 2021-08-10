@@ -77,6 +77,17 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 ![World Cities REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
  "World Cities REST Book 📓")
 
+## Pyolite Notebook Example
+
+1. Install [Pyolite](https://marketplace.visualstudio.com/items?itemName=joyceerhl.vscode-pyolite) 🐍 vscode extension
+
+2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/chicago-red-light-cameras-pyolite.ipynb) Pyolite Notebook 📓
+
+3. Run All cells ⌗:
+
+![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-pyolite-notebook.png?raw=true 
+ "Chicago Red Light Cameras Pyolite Notebook 📓")
+
 # Recommended Extensions
 
 Recommended extensions for working with Interactive Notebooks 📚 data 🈸 charts 📈 and geo 🗺️ data formats in [VSCode](https://code.visualstudio.com/):

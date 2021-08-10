@@ -57,7 +57,7 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 
 2. Download [USA State Capitals `GeoJSON`](https://github.com/RandomFractals/vscode-leaflet/tree/main/data/geojson/usa-state-capitals.geojson) data file
 
-3. Load [USA State Capitals](https://github.com/RandomFractals/vscode-data-table/blob/main/notebooks/usa-airports.ipynb) TypeScript Notebook 📓
+3. Load [USA State Capitals](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/usa-state-capitals-typescript.ipynb) TypeScript Notebook 📓
 
 4. Run All cells ⌗ to view that `GeoJSON` data output in a Leaflet 🌿 Map 🗺️:
 

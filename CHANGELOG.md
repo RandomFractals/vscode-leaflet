@@ -2,6 +2,23 @@
 
 See [releases](https://github.com/RandomFractals/vscode-leaflet/releases) for source code and `vscode-leaflet.vsix` extension package download
 
+# v1.2.0 - [2021-08-10]
+
+- [#49](https://github.com/RandomFractals/vscode-leaflet/issues/49)
+Add .NET Interactive .ipynb example
+- [#50](https://github.com/RandomFractals/vscode-leaflet/issues/50)
+Add TypeScript .ipynb example
+- [#52](https://github.com/RandomFractals/vscode-leaflet/issues/52)
+Document REST Book example
+- [#53](https://github.com/RandomFractals/vscode-leaflet/issues/53)
+Add Pyolite notebook example
+- [#54](https://github.com/RandomFractals/vscode-leaflet/issues/54)
+Add Notebook examples to Features list in docs
+- [#55](https://github.com/RandomFractals/vscode-leaflet/issues/55)
+Add VS Marketplace Installs and Downloads badges to docs
+- [#56](https://github.com/RandomFractals/vscode-leaflet/issues/56)
+Package and publish Notebook Examples update release
+
 # v1.1.0 - [2021-08-09]
 
 - [#34](https://github.com/RandomFractals/vscode-leaflet/issues/34)

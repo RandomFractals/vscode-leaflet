@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import type {OutputItem} from 'vscode-notebook-renderer';
 import {csvParse} from 'd3-dsv';
 const geoJson = require('geojson');
@@ -24,7 +25,8 @@ export class OutputLoader {
     const objectData = this.getJsonData(this.outputData);
     if (objectData !== undefined) {
       if (objectData.features) {
-        console.log('leaflet.map:data:format: GeoJSON');
+        // console.log('leaflet.map:data:format: GeoJSON');
+        // already in geoJSON data format for map display
         return objectData;
       }
       else {
@@ -234,11 +236,19 @@ export class OutputLoader {
 
   /**
    * Gets geo data in GeoJSON format.
-   * @param data Json data object.
+   * @param data Data object.
    */
   getGeoData(data: any): any {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    let geoData = geoJson.parse(data, {"Point": ['latitude', 'longitude']});
+    let geoData = data;
+    try {
+      geoData = geoJson.parse(data, {
+        "Point": ['latitude', 'longitude'],
+        removeInvalidGeometries: true
+      });
+    }
+    catch(error: any) {
+      console.log('leaflet.map:data: GeoJSON parse error:\n', error.message);
+    }
     return geoData;
   }
 }

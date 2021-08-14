@@ -1,9 +1,10 @@
 import type {OutputItem} from 'vscode-notebook-renderer';
 import {csvParse} from 'd3-dsv';
+const geoJson = require('geojson');
 const xmlParser = require('fast-xml-parser');
 
 /**
- * OutputLoaders loads data from notebook cell output items.
+ * OutputLoader loads data from notebook cell output item.
  */
 export class OutputLoader {
 
@@ -22,34 +23,44 @@ export class OutputLoader {
     // try getting JSON data first
     const objectData = this.getJsonData(this.outputData);
     if (objectData !== undefined) {
-      return objectData;
+      if (objectData.features) {
+        console.log('leaflet.map:data:format: GeoJSON');
+        return objectData;
+      }
+      else {
+        // try to convert it to GeoJSON data format for map display
+        return this.getGeoData(objectData);
+      }
     }
 
     // try parsing text data
     let textData: string = this.outputData.text();
     if (textData.length > 0) {
-      if (textData.startsWith("'") && textData.endsWith("'")) {
-        // strip out start/end single quotes from notebook cell output
-        textData = textData.substr(1, textData.length-2);
-      }
-      console.log('leaflet.map:data:text:', textData.substring(0, Math.min(300, textData.length)), '...');
+      console.log('leaflet.map:data:text:', textData.substring(0, Math.min(80, textData.length)), '...');
 
-      // see if text data is in json data format
+      // load JSON data
       const jsonData = this.getJsonData(textData);
+      let outputData: any;
       if (jsonData !== undefined) {
-        return jsonData;
+        outputData = jsonData;
       }
       else if (textData.startsWith('<?xml version="1.0"')) {
         // parse XML data
-        return this.xmlParse(textData);
+        outputData = this.xmlParse(textData);
       }
       else if (this.isCsv(textData)) {
         // parse CSV data
-        return csvParse(textData);
+        outputData = csvParse(textData);
       }
       else if (textData !== '{}' && !textData.startsWith('<Buffer ')) { // empty object or binary data
-        return textData;
+        outputData = textData;
       }
+
+      if (outputData && typeof outputData !== 'string') {
+        // convert it to Geo data for display on the map
+        return this.getGeoData(outputData);
+      }
+      return textData;
     }
 
     // TODO: try loading binary Apache Arrow data
@@ -140,6 +151,10 @@ export class OutputLoader {
     textData = textData.replace(objectEndRegEx, '}');
     textData = textData.replace(xRegEx, ' ');
     textData = textData.replace(newLineRegEx, '');
+    if (textData.startsWith("'") && textData.endsWith("'")) {
+      // strip out start/end single quotes from notebook cell output
+      textData = textData.substr(1, textData.length-2);
+    }
     // console.log('leaflet.map:data:text:', textData.substring(0, Math.min(300, textData.length)), '...');
     return textData;
   }
@@ -215,5 +230,15 @@ export class OutputLoader {
       console.log('leaflet.map:data: XML parse error:\n', error.message);
     }
     return jsonData;
+  }
+
+  /**
+   * Gets geo data in GeoJSON format.
+   * @param data Json data object.
+   */
+  getGeoData(data: any): any {
+    // eslint-disable-next-line @typescript-eslint/naming-convention
+    let geoData = geoJson.parse(data, {"Point": ['latitude', 'longitude']});
+    return geoData;
   }
 }

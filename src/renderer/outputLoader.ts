@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import type {OutputItem} from 'vscode-notebook-renderer';
+import {GeoConverter} from './geoConverter';
 import {csvParse} from 'd3-dsv';
-const geoJson = require('geojson');
 const xmlParser = require('fast-xml-parser');
 
 /**
@@ -9,12 +9,15 @@ const xmlParser = require('fast-xml-parser');
  */
 export class OutputLoader {
 
+  private geoConverter: GeoConverter;
+
   /**
    * Creates new OutputLoader instance.
    * @param outputData Notebook cell output item.
    * @param mimeType Notebook cell output mime type.
    */
   constructor (private outputData: OutputItem, private mimeType: string) {
+    this.geoConverter = new GeoConverter();
   }
     
   /**
@@ -241,7 +244,7 @@ export class OutputLoader {
   getGeoData(data: any): any {
     let geoData = data;
     try {
-      geoData = geoJson.parse(data, {
+      geoData = this.geoConverter.toGeo(data, {
         "Point": ['latitude', 'longitude'],
         removeInvalidGeometries: true
       });

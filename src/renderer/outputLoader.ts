@@ -245,12 +245,17 @@ export class OutputLoader {
     let geoData = data;
     try {
       geoData = this.geoConverter.toGeo(data, {
-        "Point": ['latitude', 'longitude'],
-        removeInvalidGeometries: true
+        Point: ['latitude', 'longitude'],
+        removeInvalidGeometries: true,
+        exclude: [
+          'geometry.bbox',
+          'geometry.type',
+          'geometry.coordinates'
+        ]    
       });
     }
     catch(error: any) {
-      console.log('leaflet.map:data: GeoJSON parse error:\n', error.message);
+      console.log('leaflet.map:data: GeoJSON parse error:\n', error);
     }
     return geoData;
   }

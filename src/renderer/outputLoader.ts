@@ -249,6 +249,11 @@ export class OutputLoader {
     catch(error: any) {
       console.log('leaflet.map:data: GeoJSON parse error:\n', error);
     }
+    if (!geoData.features || geoData.features.length <= 0) {
+      // console.log(`leaflet.map:data:features: ${JSON.stringify(geoData.features, null, 2)}`);
+      // use parsed data input instead
+      return data;
+    }
     return geoData;
   }
 

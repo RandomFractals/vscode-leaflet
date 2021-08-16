@@ -58,7 +58,12 @@ export class GeoConverter {
     if (Array.isArray(objects)) {
       // create geo features collection
       geoJson = {type: 'FeatureCollection', features: []};
-      objects.forEach(item => geoJson.features.push(this.getFeature(item, settings)));
+      objects.forEach(item => {
+        const feature: any = this.getFeature(item, settings);
+        if (feature.geometry?.type !== undefined) { // has geometry type and coordinates
+          geoJson.features.push(feature);
+        }
+      });
       this.addOptionalProperties(geoJson, settings);
     } 
     else {

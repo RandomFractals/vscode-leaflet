@@ -26,13 +26,24 @@ Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https:
 
 # Features
 
-- View Locations [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) Notebook 📓 cell ⌗ data output in a Leaflet 🌿 map 🗺️ 
-with [clustered markers](https://github.com/RandomFractals/vscode-leaflet/issues/8#issuecomment-894707382), [location information popups](https://github.com/RandomFractals/vscode-leaflet/issues/28#issuecomment-894812944) and [hover tooltips](https://github.com/RandomFractals/vscode-leaflet/issues/30#issuecomment-894824576)
+- View Location data from `CSV`, `XML`, `JSON`, and [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) Notebook 📓 cell ⌗ data output on the Leaflet 🌿 map 🗺️ with [clustered markers](https://github.com/RandomFractals/vscode-leaflet/issues/8#issuecomment-894707382), [location information popups](https://github.com/RandomFractals/vscode-leaflet/issues/28#issuecomment-894812944) and [hover tooltips](https://github.com/RandomFractals/vscode-leaflet/issues/30#issuecomment-894824576)
 - [REST Book](https://github.com/RandomFractals/vscode-leaflet#rest-book-example) 📓 [TypeScript Notebook](https://github.com/RandomFractals/vscode-leaflet#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-leaflet#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-leaflet#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-leaflet#%EF%B8%8F-examples) 📚
-- View `JSON`, `CSV`, and `XML` data in `JSON` format in a scrollable text container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for a quick copy/paste to other places:
+- View `JSON`, `CSV`, and `XML` without Location data in `JSON` format in a scrollable text container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for a quick copy/paste to other places:
 
 ![Leaflet Map 🗺️ Text Output](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-text-output.png?raw=true 
  "Leaflet Map 🗺️ Text Output")
+
+# Supported Data Formats
+
+Leaflet 🌿 Map 🗺️ Notebook 📓 cell ⌗ data output Renderer supports loading Location data from the following output formats:
+
+| Data Mime Type | Location Data | Geo Location Processing Description |
+| --- | --- | --- |
+| `application/geo+json` | [Point](https://www.rfc-editor.org/rfc/rfc7946.html#section-3.1.2) | `GeoJSON` Location `Point` coordinates are displyaed as clustered markers using [`leaflet.markercluster`](https://github.com/Leaflet/Leaflet.markercluster) JavaScript library with custom marker cluster icons and config. |
+| `application/json` | Objects that contain Geo location property pairs ending with: `latitude`/`longitude`, `lat/lng`, or `lan/lng`| Flat `JSON` data objects and arrays are processed by our custom [`GeoConverter`](https://github.com/RandomFractals/vscode-leaflet/blob/main/src/renderer/geoConverter.ts) to extract Location information and covert loaded dataset to `GeoJSON` for display on the map. |
+| `text/csv` | `CSV` data with column names in the 1st header row and columns ending with: `latitude`/`longitude`, `lat/lng`, or `lan/lng` | `CSV` data is parsed with [d3-dsv](https://github.com/d3/d3-dsv) JavaScript library and converted to flat `JSON` data array and then to `GeoJSON` with our [`GeoConverter`](https://github.com/RandomFractals/vscode-leaflet/blob/main/src/renderer/geoConverter.ts) to display locations on the map. |
+| `application/vnd.code.notebook.stdout` or `text/plain` | Location data as `string` in `CSV`, `JSON` or `GeoJSON` data format as described above | Text data typically comes from display and [`console.log()`](https://developer.mozilla.org/en-US/docs/Web/API/console/log) instructions in vscode notebooks. We try to parse text as `JSON` with [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) or as `CSV` with [d3-dsv.csvParse()](https://github.com/d3/d3-dsv#csvParse). If those parse methods fail, or provided text data contains no location data we can extract, we display text output in a custom scrollable text container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for a quick copy/paste to other places. Otherwise, loaded data is converted to `GeoJSON` with our [`GeoConverter`](https://github.com/RandomFractals/vscode-leaflet/blob/main/src/renderer/geoConverter.ts) for locations display on the map. |
+| `application/xml` or `text/xml` | `XML` data with root node children that contain attributes ending with: `latitude`/`longitude`, `lat/lng`, or `lan/lng` | `XML` data support is experimental and might be removed later. |
 
 # 🗺️ Examples
 

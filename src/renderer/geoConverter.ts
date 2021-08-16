@@ -5,6 +5,7 @@
 export class GeoConverter {
 
   // supported geometry object types
+  // see GeoJSON spec: https://www.rfc-editor.org/rfc/rfc7946.html#section-1.4
   private geometryTypes = [
     'Point',
     'MultiPoint',
@@ -19,29 +20,11 @@ export class GeoConverter {
   private geometryProperties: Array<any> = [];
 
   // default geo data conversion options
-  default: object = {
+  defaultOptions: object = {
     doThrows: {
       invalidGeometry: false
     }
   };
-
-  /**
-   * Creates new Geo data converter instance.
-   */
-  constructor() {
-  }
-
-  /**
-   * Generates invalid geometry error.
-   * @param args Geometry data arguments.
-   */
-  invalidGeometryError(...args: any[]): Error {
-    let errorArgs = (1 <= args.length) ? [].slice.call(args, 0) : [];
-    let item = errorArgs.shift();
-    let params = errorArgs.shift();
-    throw Error(`Invalid Geometry: item: ${JSON.stringify(item, null, 2)}
-      \n params: ${JSON.stringify(params, null, 2)}`);
-  }
 
   /**
    * Geo data conversion errors.
@@ -49,31 +32,25 @@ export class GeoConverter {
   errors: object = {
     invalidGeometryError: this.invalidGeometryError
   };
-
+  
   /**
-   * Validates geometry object.
-   * @param geometry Geometry object to validate.
-   * @returns 
+   * Creates new Geo data converter instance.
    */
-  isGeometryValid(geometry: any): boolean {
-    if (!geometry || !Object.keys(geometry).length) {
-      return false;
-    }
-    return true;
-  };
+  constructor() {
+  }
 
   /**
    * Converts array or data object to GeoJSON object.
    * @param objects Data objects to convert.
-   * @param params Geo data conversion options.
+   * @param options Geo data conversion options.
    * @param callback Optional callback for data conversion.
    * @returns GeoJSON data object.
    */
-  public toGeo(objects: [] | object, params: object, callback?: Function): any {
+  public toGeo(objects: [] | object, options: object, callback?: Function): any {
     let geoJson: any;
 
     // apply geo data conversion default settings
-    let settings = this.applyDefaults(params, this.default);
+    let settings = this.applyDefaults(options, this.defaultOptions);
       
     // reset geometry fields
     this.geometryProperties.length = 0;
@@ -169,36 +146,37 @@ export class GeoConverter {
   }
 
   /**
-   * Moves geometry parameters to the `geom` key for easier access.
-   * @param params Geo data parameters.
+   * Moves geometry settings to the `geometry` key for easier access.
+   * @param settings Geometry data settings.
    */
-  private setGeometry(params: any): void {
-    params.geom = {};
-    for (let param in params) {
-      if (params.hasOwnProperty(param) && this.geometryTypes.indexOf(param) !== -1) {
-        params.geom[param] = params[param];
-        delete params[param];
+  private setGeometry(settings: any): void {
+    settings.geometry = {};
+    for (let propertyName in settings) {
+      if (settings.hasOwnProperty(propertyName) && 
+        this.geometryTypes.indexOf(propertyName) >= 0) {
+        settings.geometry[propertyName] = settings[propertyName];
+        delete settings[propertyName];
       }
     }
-    this.setGeometryProperties(params.geom);
+    this.setGeometryProperties(settings.geometry);
   }
 
   /**
    * Adds fields with geometry data to geometry object properties.
    * Geometry properties are used when adding properties to geo features, 
    * so that no geometry fields are added to the geo properties collection.
-   * @param params Geo data parameters.
+   * @param geoSettings Geometry data settings.
    */
-  private setGeometryProperties(params: any): void {
-    for (let param in params) {
-      if (params.hasOwnProperty(param)) {
-        if (typeof params[param] === 'string') {
-          this.geometryProperties.push(params[param]);
+  private setGeometryProperties(geoSettings: any): void {
+    for (let propertyName in geoSettings) {
+      if (geoSettings.hasOwnProperty(propertyName)) {
+        if (typeof geoSettings[propertyName] === 'string') {
+          this.geometryProperties.push(geoSettings[propertyName]);
         }
-        else if (typeof params[param] === 'object') {
+        else if (typeof geoSettings[propertyName] === 'object') {
           // array of coordinates for Point object
-          this.geometryProperties.push(params[param][0]);
-          this.geometryProperties.push(params[param][1]);
+          this.geometryProperties.push(geoSettings[propertyName][0]);
+          this.geometryProperties.push(geoSettings[propertyName][1]);
         }
       }
     }
@@ -211,29 +189,30 @@ export class GeoConverter {
   /**
    * Creates a Feature object for the GeoJSON features collection.
    * @param item Data item object.
-   * @param params Geo data conversion settings.
+   * @param settings Geo data conversion settings.
    * @returns Feature object with geometry and data properties.
    */
-  private getFeature(item: any, params: any): object {
+  private getFeature(item: any, settings: any): object {
     let feature: any = {type: 'Feature'};
-    feature['geometry'] = this.buildGeometry(item, params);
-    feature['properties'] = this.getDataProperties(item, params);
+    feature['geometry'] = this.buildGeometry(item, settings);
+    feature['properties'] = this.getDataProperties(item, settings);
     return feature;
   }
 
   /**
-   * Creates data Properties collection for the GeoJSON Feature object.
+   * Creates data properties collection for the GeoJSON Feature object.
    * @param item Data item object.
-   * @param params Geo data conversion settings.
+   * @param settings Geo data conversion settings.
    * @returns Feature object with geometry and data properties.
    */
-  private getDataProperties(item: any, params: any): object {
+  private getDataProperties(item: any, settings: any): object {
     let data: any = {};
-    // TODO: add include, exclude, and extra data props support 
+    // TODO: add include and extra data props support 
     // from: https://github.com/eugeneYWang/GeoJSON.ts/blob/master/geojson.ts#L343
     for (let propertyName in item) {
       if (item.hasOwnProperty(propertyName) && 
-        this.geometryProperties.indexOf(propertyName) === -1) {
+        this.geometryProperties.indexOf(propertyName) === -1 &&
+        settings.exclude.indexOf(propertyName) === -1) {
         // add it to geometry feature data properties
         data[propertyName] = item[propertyName];
       }
@@ -253,68 +232,68 @@ export class GeoConverter {
   /**
    * Creates geometry object for the geo data feature.
    * @param item Data item.
-   * @param params Geo data params.
+   * @param settings Geo data settings.
    * @returns Geometry data object.
    */
-  private buildGeometry(item: any, params: any): any {
+  private buildGeometry(item: any, settings: any): any {
     let geometry: any = {};
-    for (let geometryType in params.geom) {
-      let val = params.geom[geometryType];
-      // Geometry parameter specified as: {Point: 'coords'}
-      if (typeof val === 'string' && item.hasOwnProperty(val)) {
+    for (let geometryType in settings.geometry) {
+      let geometryProperty = settings.geometry[geometryType];
+      if (typeof geometryProperty === 'string' && item.hasOwnProperty(geometryProperty)) {
+        // string point: {Point: 'coords'}
         if (geometryType === 'GeoJSON') {
-          geometry = item[val];
+          geometry = item[geometryProperty];
         } 
         else {
           geometry['type'] = geometryType;
-          geometry['coordinates'] = item[val];
+          geometry['coordinates'] = item[geometryProperty];
         }
       } 
-      else if (typeof val === 'object' && !Array.isArray(val)) {
-        /* handle polygons of form
-          Polygon: {
-            northeast: ['lat', 'lng'],
-            southwest: ['lat', 'lng']
-          }
-          */
-        let points: any = Object.keys(val).map((key: string) => {
-          let order = val[key];
+      else if (typeof geometryProperty === 'object' && !Array.isArray(geometryProperty)) {
+        /* polygons of form
+        Polygon: {
+          northeast: ['lat', 'lng'],
+          southwest: ['lat', 'lng']
+        }
+        */
+        let points: any = Object.keys(geometryProperty).map((key: string) => {
+          let order = geometryProperty[key];
           let newItem = item[key];
-          return this.buildGeometry(newItem, {geom: {Point: order}});
+          return this.buildGeometry(newItem, {geometry: {Point: order}});
         });
         geometry['type'] = geometryType;
         geometry['coordinates'] = [].concat(
           points.map((point: any) => point.coordinates)
         );
       } 
-      else if (Array.isArray(val) &&
-        item.hasOwnProperty(val[0]) &&
-        item.hasOwnProperty(val[1]) &&
-        item.hasOwnProperty(val[2])) {
-        // geometry parameter specified as: {Point: ['lat', 'lng', 'alt']}
+      else if (Array.isArray(geometryProperty) &&
+        item.hasOwnProperty(geometryProperty[0]) &&
+        item.hasOwnProperty(geometryProperty[1]) &&
+        item.hasOwnProperty(geometryProperty[2])) {
+        // point coordinates with alt: {Point: ['lat', 'lng', 'alt']}
         geometry['type'] = geometryType;
         geometry['coordinates'] = [
-          Number(item[val[1]]),
-          Number(item[val[0]]),
-          Number(item[val[2]])
+          Number(item[geometryProperty[1]]),
+          Number(item[geometryProperty[0]]),
+          Number(item[geometryProperty[2]])
         ];
       } 
-      else if (Array.isArray(val) &&
-        item.hasOwnProperty(val[0]) &&
-        item.hasOwnProperty(val[1])) {
-        // geometry parameter specified as: {Point: ['lat', 'lng']}
+      else if (Array.isArray(geometryProperty) &&
+        item.hasOwnProperty(geometryProperty[0]) &&
+        item.hasOwnProperty(geometryProperty[1])) {
+        // point coordinates: {Point: ['lat', 'lng']}
         geometry['type'] = geometryType;
-        geometry['coordinates'] = [Number(item[val[1]]), Number(item[val[0]])];
+        geometry['coordinates'] = [Number(item[geometryProperty[1]]), Number(item[geometryProperty[0]])];
       } 
-      else if (Array.isArray(val) &&
-        this.isNested(val[0]) &&
-        this.isNested(val[1]) &&
-        this.isNested(val[2])) { 
-        // geometry parameter specified as: {Point: ['container.lat', 'container.lng', 'container.alt']}
+      else if (Array.isArray(geometryProperty) &&
+        this.isNested(geometryProperty[0]) &&
+        this.isNested(geometryProperty[1]) &&
+        this.isNested(geometryProperty[2])) { 
+        // nested point coordinates with alt: {Point: ['container.lat', 'container.lng', 'container.alt']}
         let coordinates = [];
-        for (let i = 0; i < val.length; i++) {
+        for (let i = 0; i < geometryProperty.length; i++) {
           // i.e. 0 and 1
-          var paths = val[i].split('.');
+          var paths = geometryProperty[i].split('.');
           var itemClone = item;
           for (var j = 0; j < paths.length; j++) {
             if (!itemClone.hasOwnProperty(paths[j])) {
@@ -332,14 +311,14 @@ export class GeoConverter {
           Number(coordinates[2])
         ];
       }      
-      else if (Array.isArray(val) &&
-        this.isNested(val[0]) &&
-        this.isNested(val[1])) {
-        // geometry parameter specified as: {Point: ['container.lat', 'container.lng']}
+      else if (Array.isArray(geometryProperty) &&
+        this.isNested(geometryProperty[0]) &&
+        this.isNested(geometryProperty[1])) {
+        // nested point coordinates: {Point: ['container.lat', 'container.lng']}
         let coordinates = [];
-        for (let i = 0; i < val.length; i++) {
+        for (let i = 0; i < geometryProperty.length; i++) {
           // i.e. 0 and 1
-          let paths = val[i].split(".");
+          let paths = geometryProperty[i].split(".");
           let itemClone = item;
           for (let j = 0; j < paths.length; j++) {
             if (!itemClone.hasOwnProperty(paths[j])) {
@@ -353,24 +332,51 @@ export class GeoConverter {
         geometry['type'] = geometryType;
         geometry['coordinates'] = [Number(coordinates[1]), Number(coordinates[0])];
       }
-      else if (Array.isArray(val) &&
-        val[0].constructor.name === 'Object' &&
-        Object.keys(val[0])[0] === 'coordinates') {
-        // geometry parameter specified as: {Point: [{coordinates: [lat, lng]}]}
+      else if (Array.isArray(geometryProperty) &&
+        geometryProperty[0].constructor.name === 'Object' &&
+        Object.keys(geometryProperty[0])[0] === 'coordinates') {
+        // coordinates point: {Point: [{coordinates: [lat, lng]}]}
         geometry['type'] = geometryType;
         geometry['coordinates'] = [
-          Number(item.coordinates[val[0].coordinates.indexOf('lng')]),
-          Number(item.coordinates[val[0].coordinates.indexOf('lat')])
+          Number(item.coordinates[geometryProperty[0].coordinates.indexOf('lng')]),
+          Number(item.coordinates[geometryProperty[0].coordinates.indexOf('lat')])
         ];
       }
     }
 
-    if (params.doThrows && params.doThrows.invalidGeometry && !this.isGeometryValid(geometry)) {
-      throw this.invalidGeometryError(item, params);
+    if (settings.doThrows && 
+      settings.doThrows.invalidGeometry && 
+      !this.isValidGeometry(geometry)) {
+      throw this.invalidGeometryError(item, settings);
     }
 
     return geometry;
   }
+
+  
+  /**
+   * Generates invalid geometry error.
+   * @param args Geometry data arguments.
+   */
+   invalidGeometryError(...args: any[]): Error {
+    let errorArgs = (1 <= args.length) ? [].slice.call(args, 0) : [];
+    let item = errorArgs.shift();
+    let params = errorArgs.shift();
+    throw Error(`Invalid Geometry: item: ${JSON.stringify(item, null, 2)}
+      \n params: ${JSON.stringify(params, null, 2)}`);
+  }
+
+  /**
+   * Validates geometry object.
+   * @param geometry Geometry object to validate.
+   * @returns 
+   */
+  isValidGeometry(geometry: any): boolean {
+    if (!geometry || !Object.keys(geometry).length) {
+      return false;
+    }
+    return true;
+  };
 
   /**
    * Adds data contained in the `extra` parameter to geo data properties.

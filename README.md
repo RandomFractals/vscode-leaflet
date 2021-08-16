@@ -28,7 +28,7 @@ Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https:
 
 - View Location data from `CSV`, `XML`, `JSON`, and [`GeoJSON`](https://www.rfc-editor.org/rfc/rfc7946.html) Notebook 📓 cell ⌗ data output on the Leaflet 🌿 map 🗺️ with [clustered markers](https://github.com/RandomFractals/vscode-leaflet/issues/8#issuecomment-894707382), [location information popups](https://github.com/RandomFractals/vscode-leaflet/issues/28#issuecomment-894812944) and [hover tooltips](https://github.com/RandomFractals/vscode-leaflet/issues/30#issuecomment-894824576)
 - [REST Book](https://github.com/RandomFractals/vscode-leaflet#rest-book-example) 📓 [TypeScript Notebook](https://github.com/RandomFractals/vscode-leaflet#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-leaflet#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-leaflet#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-leaflet#%EF%B8%8F-examples) 📚
-- View `JSON`, `CSV`, and `XML` without Location data in `JSON` format in a scrollable text container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for a quick copy/paste to other places:
+- View `JSON`, `CSV`, and `XML` data without Geo Location information in `JSON` format in a scrollable text container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for a quick copy/paste to other places:
 
 ![Leaflet Map 🗺️ Text Output](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-text-output.png?raw=true 
  "Leaflet Map 🗺️ Text Output")

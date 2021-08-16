@@ -244,19 +244,64 @@ export class OutputLoader {
   getGeoData(data: any): any {
     let geoData = data;
     try {
-      geoData = this.geoConverter.toGeo(data, {
-        Point: ['latitude', 'longitude'],
-        removeInvalidGeometries: true,
-        exclude: [
-          'geometry.bbox',
-          'geometry.type',
-          'geometry.coordinates'
-        ]    
-      });
+      geoData = this.geoConverter.toGeo(data, this.getGeoDataOptions(data));
     }
     catch(error: any) {
       console.log('leaflet.map:data: GeoJSON parse error:\n', error);
     }
     return geoData;
+  }
+
+  /**
+   * Gets geo data conversion options.
+   * @param data Data to inspect.
+   * @returns Geo converter options.
+   */
+  getGeoDataOptions(data: any): any {
+    const geoOptions = {
+      Point: ['latitude', 'longitude'],
+      removeInvalidGeometries: true,
+      exclude: [
+        'geometry.bbox',
+        'geometry.type',
+        'geometry.coordinates'
+      ]
+    };
+    
+    // get data object to inspect
+    let dataItem: any = data;
+    if (Array.isArray(data) && data.length > 0) {
+      dataItem = data[0];
+    }
+
+    // inspect flat data object
+    let latitudePropertyName, longitudePropertyName;
+    for (let propertyName in dataItem) {
+      if (dataItem.hasOwnProperty(propertyName)) {
+        const geoPropertyName: string = propertyName.toLowerCase();
+        // check for latitude/longitude, lat/lng, lat/lon point pairs
+        if (geoPropertyName.endsWith('latitude')) {
+          latitudePropertyName = propertyName;
+        }
+        else if (geoPropertyName.endsWith('lat')) {
+          latitudePropertyName = propertyName;
+        }
+        else if (geoPropertyName.endsWith('longitude')) {
+          longitudePropertyName = propertyName;
+        }
+        else if (geoPropertyName.endsWith('lon')) {
+          longitudePropertyName = propertyName;
+        }
+        else if (geoPropertyName.endsWith('lng')) {
+          longitudePropertyName = propertyName;
+        }
+      }
+    }
+
+    if (latitudePropertyName && longitudePropertyName) {
+      // add point data fields
+      geoOptions.Point = [latitudePropertyName, longitudePropertyName];
+    }
+    return geoOptions;
   }
 }

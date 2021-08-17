@@ -2,6 +2,19 @@
 
 See [releases](https://github.com/RandomFractals/vscode-leaflet/releases) for source code and `vscode-leaflet.vsix` extension package download
 
+# v1.3.0 - [2021-08-16]
+
+- [#35](https://github.com/RandomFractals/vscode-leaflet/issues/35)
+Convert CSV and flat JSON data with geo location to GeoJSON for locations display on the map
+- [#57](https://github.com/RandomFractals/vscode-leaflet/issues/57)
+Add Countries centroid data and Leaflet map Notebook example
+- [#58](https://github.com/RandomFractals/vscode-leaflet/issues/58)
+Set Location properties table to fit content for geo data points with only a few properties
+- [#59](https://github.com/RandomFractals/vscode-leaflet/issues/59)
+Add CSV and flat JSON Geo location REST Book examples and docs
+- [#60](https://github.com/RandomFractals/vscode-leaflet/issues/60)
+Package and publish CSV/JSON location data display release
+
 # v1.2.0 - [2021-08-10]
 
 - [#49](https://github.com/RandomFractals/vscode-leaflet/issues/49)

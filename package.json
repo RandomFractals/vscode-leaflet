@@ -2,7 +2,7 @@
   "name": "vscode-leaflet",
   "displayName": "Leaflet Map",
   "description": "Leaflet 🌿 Map 🗺️ renderer for Notebook 📓 cell ⌗ data outputs",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "engines": {
     "vscode": "^1.59.0"
   },

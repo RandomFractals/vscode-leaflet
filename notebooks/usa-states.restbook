@@ -1,0 +1,1 @@
+[{"kind":1,"language":"markdown","value":"# USA States REST Book 📓\r\n\r\nData source: [https://leafletjs.com/examples/choropleth](https://leafletjs.com/examples/choropleth)","outputs":[]},{"kind":2,"language":"rest-book","value":"GET https://raw.githubusercontent.com/RandomFractals/vscode-leaflet/main/data/geojson/usa-states.geojson","outputs":[]}]

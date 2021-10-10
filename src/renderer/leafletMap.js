@@ -1,5 +1,4 @@
 /* eslint-disable curly */
-const htl = require('htl');
 const L = require('leaflet');
 const markerCluster = require('leaflet.markercluster');
 
@@ -36,6 +35,9 @@ const markerIcon = L.divIcon({
 // set default marker icon
 L.Marker.prototype.options.icon = markerIcon;
 
+// geo layer for polygons and polylines
+let geoLayer;
+
 /**
  * Creates leaflet map.
  * @param {*} geoData GeoJSON data to map.
@@ -43,18 +45,62 @@ L.Marker.prototype.options.icon = markerIcon;
  * @returns Leaflet map.
  */
 export function createMap(geoData, mapContainer) {
+
+  console.log(`leaflet.map:data:`, geoData);
+
   // create leaflet map
   let map = L.map(mapContainer).setView([24.48, 4.48], 1.5); // approximate world map center and zoom for 480px high map
 
   // add tiles layer with attributions
-  let tileLayer = L.tileLayer(tiles, {
+  L.tileLayer(tiles, {
     attribution: attribution,
     detectRetina: false,
     noWrap: false,
     subdomains: 'abc'
   }).addTo(map);
 
-  // add markers
+  // create geo layer for polygons and polylines
+  geoLayer = L.geoJson(geoData, {
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup(createLocationInfoHtml(feature));
+      layer.bindTooltip(createLocationTooltipHtml(feature), {sticky: true});
+      layer.on({
+        mouseover: function(e) {
+          // highlight selected geo layer
+          const layer = e.target;
+          layer.setStyle({
+            weight: 2,
+            color: '#999',
+            dashArray: '',
+            fillOpacity: 0.8
+          });
+          layer.bringToFront();
+        },
+        mouseout: function(e) {
+          // reset highlighted region styles and info display
+          geoLayer.resetStyle(e.target);
+        },
+        click: function(e) {
+          const layer = e.target;
+          // zoom to selected geo layer
+          // map.fitBounds(layer.getBounds());
+        }
+      });    
+    },
+    filter: function(feature, layer) {
+      return (feature.geometry.type !== 'Point');
+    },
+    style: {
+      fillColor: '#34d5eb',
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '3',
+      fillOpacity: 0.7
+    }
+  }).addTo(map);
+  
+  // create marker cluster group
   let markers = L.markerClusterGroup({
     maxClusterRadius: 80,
     // disable all marker cluster defaults:
@@ -68,15 +114,19 @@ export function createMap(geoData, mapContainer) {
     }
   });
 
-  // create geo layer
-  let geoLayer = L.geoJson(geoData, {
-    onEachFeature: function (feature, layer) {
+  // create locations layer
+  let locations = L.geoJSON(geoData, {
+    onEachFeature: function(feature, layer) {
       layer.bindPopup(createLocationInfoHtml(feature));
       layer.bindTooltip(createLocationTooltipHtml(feature), {sticky: true});
-    }
+    },
+    filter: function(feature, layer) {
+      return (feature.geometry.type === 'Point');
+    },
   });
 
-  markers.addLayer(geoLayer);
+  // add location markers
+  markers.addLayer(locations);
   map.addLayer(markers);
   // map.fitBounds(markers.getBounds());
 

@@ -25,6 +25,13 @@
   overflow: auto;
 }
 
+/* fix svg element styles for restbook ext.: https://github.com/tanhakabir/rest-book/blob/main/src/custom-renderer/style.css#L46 */
+.leaflet-zoom-animated {
+  width: inherit;
+  padding-right: 0px !important;
+  transform: translateY(0px);
+}
+
 .location-info {
   border-collapse: collapse !important;
   display: inline-table !important;

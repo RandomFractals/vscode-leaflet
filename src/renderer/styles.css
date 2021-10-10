@@ -4,6 +4,13 @@
   overflow: auto;
 }
 
+/* fix svg element styles for restbook ext.: https://github.com/tanhakabir/rest-book/blob/main/src/custom-renderer/style.css#L46 */
+.leaflet-zoom-animated {
+  width: inherit;
+  padding-right: 0px !important;
+  transform: translateY(0px);
+}
+
 .map-container {
   height: 480px;
   width: 100%;
@@ -23,13 +30,6 @@
 .map-popup {
   max-height: 180px;
   overflow: auto;
-}
-
-/* fix svg element styles for restbook ext.: https://github.com/tanhakabir/rest-book/blob/main/src/custom-renderer/style.css#L46 */
-.leaflet-zoom-animated {
-  width: inherit;
-  padding-right: 0px !important;
-  transform: translateY(0px);
 }
 
 .location-info {

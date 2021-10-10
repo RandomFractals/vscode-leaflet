@@ -35,9 +35,6 @@ const markerIcon = L.divIcon({
 // set default marker icon
 L.Marker.prototype.options.icon = markerIcon;
 
-// geo layer for polygons and polylines
-let geoLayer;
-
 /**
  * Creates leaflet map.
  * @param {*} geoData GeoJSON data to map.
@@ -60,7 +57,7 @@ export function createMap(geoData, mapContainer) {
   }).addTo(map);
 
   // create geo layer for polygons and polylines
-  geoLayer = L.geoJson(geoData, {
+  const geoLayer = L.geoJson(geoData, {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(createLocationInfoHtml(feature));
       layer.bindTooltip(createLocationTooltipHtml(feature), {sticky: true});

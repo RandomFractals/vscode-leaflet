@@ -7,7 +7,7 @@
 /* fix svg element styles for restbook ext.: https://github.com/tanhakabir/rest-book/blob/main/src/custom-renderer/style.css#L46 */
 .leaflet-zoom-animated {
   width: inherit;
-  padding-right: 0px !important;
+  padding-right: inherit;
   transform: translateY(0px);
 }
 

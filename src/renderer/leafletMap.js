@@ -21,15 +21,15 @@ const markerSvg = `<svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="
 const markerSettings = {
   markerColor: '#2966cf',
   markerCircleColor: '#fff',
-  markerCircleRadius: 32
+  markerCircleRadius: 24
 };
 
 const markerIcon = L.divIcon({
 	className: 'leaflet-pin-marker',
   html: L.Util.template(markerSvg, markerSettings),
-  iconAnchor  : [10, 32],
-  iconSize    : [25, 42],
-  popupAnchor : [0, -30]
+  iconAnchor  : [0, 24],
+  iconSize    : [24, 42],
+  popupAnchor : [10, -24]
 });
 
 // set default marker icon
@@ -99,13 +99,13 @@ export function createMap(geoData, mapContainer) {
   
   // create marker cluster group
   let markers = L.markerClusterGroup({
-    maxClusterRadius: 80,
+    maxClusterRadius: 100,
     // disable all marker cluster defaults:
 		// spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false,
     iconCreateFunction: function(cluster) {
       return L.divIcon({
         className: 'marker-cluster',
-        iconSize: L.point(20, 20),
+        iconSize: L.point(24, 24),
         html: `<b>${cluster.getChildCount()}</b>`
       });
     }

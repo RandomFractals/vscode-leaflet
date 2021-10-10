@@ -27,9 +27,9 @@ const markerSettings = {
 const markerIcon = L.divIcon({
 	className: 'leaflet-pin-marker',
   html: L.Util.template(markerSvg, markerSettings),
-  iconAnchor  : [0, 24],
+  iconAnchor  : [8, 32],
   iconSize    : [24, 42],
-  popupAnchor : [10, -24]
+  popupAnchor : [2, -32]
 });
 
 // set default marker icon
@@ -99,7 +99,7 @@ export function createMap(geoData, mapContainer) {
   
   // create marker cluster group
   let markers = L.markerClusterGroup({
-    maxClusterRadius: 100,
+    maxClusterRadius: 80,
     // disable all marker cluster defaults:
 		// spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false,
     iconCreateFunction: function(cluster) {

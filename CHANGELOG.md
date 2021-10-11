@@ -2,6 +2,11 @@
 
 See [releases](https://github.com/RandomFractals/vscode-leaflet/releases) for source code and `vscode-leaflet.vsix` extension package download
 
+# v1.4.0 - [2021-10-11]
+
+- [#31](https://github.com/RandomFractals/vscode-leaflet/issues/31)
+Add polylines and polygons geo layers display
+
 # v1.3.0 - [2021-08-16]
 
 - [#35](https://github.com/RandomFractals/vscode-leaflet/issues/35)

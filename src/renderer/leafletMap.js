@@ -42,8 +42,7 @@ L.Marker.prototype.options.icon = markerIcon;
  * @returns Leaflet map.
  */
 export function createMap(geoData, mapContainer) {
-
-  console.log(`leaflet.map:data:`, geoData);
+  // console.log(`leaflet.map:data:`, geoData);
 
   // create leaflet map
   let map = L.map(mapContainer).setView([24.48, 4.48], 1.5); // approximate world map center and zoom for 480px high map
@@ -66,10 +65,9 @@ export function createMap(geoData, mapContainer) {
           // highlight selected geo layer
           const layer = e.target;
           layer.setStyle({
-            weight: 2,
-            color: '#999',
-            dashArray: '',
-            fillOpacity: 0.8
+            color: '#ffbd33',
+            fillOpacity: 0.5,
+            weight: 1
           });
           layer.bringToFront();
         },
@@ -88,12 +86,11 @@ export function createMap(geoData, mapContainer) {
       return (feature.geometry.type !== 'Point');
     },
     style: {
-      fillColor: '#34d5eb',
-      weight: 2,
+      color: '#d3d3d3',
+      fillColor: '#ffbd33',
+      fillOpacity: 0.4,
       opacity: 1,
-      color: 'white',
-      dashArray: '3',
-      fillOpacity: 0.7
+      weight: 1
     }
   }).addTo(map);
   

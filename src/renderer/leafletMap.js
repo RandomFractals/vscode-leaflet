@@ -29,7 +29,7 @@ const markerIcon = L.divIcon({
   html: L.Util.template(markerSvg, markerSettings),
   iconAnchor  : [8, 32],
   iconSize    : [24, 42],
-  popupAnchor : [2, -32]
+  popupAnchor : [2, -16]
 });
 
 // set default marker icon
@@ -58,7 +58,9 @@ export function createMap(geoData, mapContainer) {
   // create geo layer for polygons and polylines
   const geoLayer = L.geoJson(geoData, {
     onEachFeature: function(feature, layer) {
-      layer.bindPopup(createLocationInfoHtml(feature));
+      layer.bindPopup(createLocationInfoHtml(feature), {
+        offset: [0, -10]
+      });
       layer.bindTooltip(createLocationTooltipHtml(feature), {
         sticky: true,
         offset: [10, 0]
@@ -114,7 +116,9 @@ export function createMap(geoData, mapContainer) {
   // create locations layer
   let locations = L.geoJSON(geoData, {
     onEachFeature: function(feature, layer) {
-      layer.bindPopup(createLocationInfoHtml(feature));
+      layer.bindPopup(createLocationInfoHtml(feature), {
+        offset: [0, -10]
+      });
       layer.bindTooltip(createLocationTooltipHtml(feature), {
         sticky: true,
         offset: [10, 0]

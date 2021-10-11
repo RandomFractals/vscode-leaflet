@@ -59,7 +59,10 @@ export function createMap(geoData, mapContainer) {
   const geoLayer = L.geoJson(geoData, {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(createLocationInfoHtml(feature));
-      layer.bindTooltip(createLocationTooltipHtml(feature), {sticky: true});
+      layer.bindTooltip(createLocationTooltipHtml(feature), {
+        sticky: true,
+        offset: [10, 0]
+      });
       layer.on({
         mouseover: function(e) {
           // highlight selected geo layer
@@ -112,7 +115,10 @@ export function createMap(geoData, mapContainer) {
   let locations = L.geoJSON(geoData, {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(createLocationInfoHtml(feature));
-      layer.bindTooltip(createLocationTooltipHtml(feature), {sticky: true});
+      layer.bindTooltip(createLocationTooltipHtml(feature), {
+        sticky: true,
+        offset: [10, 0]
+      });
     },
     filter: function(feature, layer) {
       return (feature.geometry.type === 'Point');

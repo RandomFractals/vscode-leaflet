@@ -71,8 +71,7 @@ export function createMap(geoData, mapContainer) {
           const layer = e.target;
           layer.setStyle({
             color: '#ffbd33',
-            fillOpacity: 0.5,
-            weight: 1
+            fillOpacity: 0.5
           });
           layer.bringToFront();
         },
@@ -90,12 +89,24 @@ export function createMap(geoData, mapContainer) {
     filter: function(feature, layer) {
       return (feature.geometry.type !== 'Point');
     },
-    style: {
-      color: '#d3d3d3',
-      fillColor: '#ffbd33',
-      fillOpacity: 0.4,
-      opacity: 1,
-      weight: 1
+    style: function(feature) {
+      if (feature.geometry.type === 'Polygon' ||
+        feature.geometry.type === 'MultiPolygon') {
+        return {
+          color: '#d3d3d3',
+          fillColor: '#ffbd33',
+          fillOpacity: 0.4,
+          opacity: 1,
+          weight: 1
+        };
+      }
+      else { // LineString or MultiLineString
+        return {
+          color: '#3ccef3',
+          opacity: 0.4,
+          weight: 4
+        };
+      }
     }
   }).addTo(map);
   

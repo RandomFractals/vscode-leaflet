@@ -66,9 +66,10 @@
           "application/topo+json",
           "application/json",
           "application/vnd.code.notebook.stdout",
-          "application/xml",          
+          "application/xml",
           "text/csv",
           "text/plain",
+          "text/x-json",
           "text/xml"
         ]
       }

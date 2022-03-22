@@ -2,6 +2,17 @@
 
 See [releases](https://github.com/RandomFractals/vscode-leaflet/releases) for source code and `vscode-leaflet.vsix` extension package download
 
+# v1.5.0 - [2022-03-22]
+
+- [#61](https://github.com/RandomFractals/vscode-leaflet/issues/61)
+Register text/x-json mime type for the REST book examples to work again
+- [#62](https://github.com/RandomFractals/vscode-leaflet/issues/62)
+Remove old eslint and tsl problem matcher extensions from recommendations list
+- [#63](https://github.com/RandomFractals/vscode-leaflet/issues/63)
+Update vscode libraries and dev dependencies to the latest v1.65
+- [#64](https://github.com/RandomFractals/vscode-leaflet/issues/64)
+Package and publish dependencies update v1.5.0 release
+
 # v1.4.0 - [2021-10-11]
 
 - [#31](https://github.com/RandomFractals/vscode-leaflet/issues/31)
@@ -75,7 +86,7 @@ Cleanup generated notebook renderer extension code
 - [#3](https://github.com/RandomFractals/vscode-leaflet/issues/3)
 Add extra extension metadata info to package.json
 - [#4](https://github.com/RandomFractals/vscode-leaflet/issues/4)
-Update proposed vscode apis and typings to latest 
+Update proposed vscode apis and typings to latest
 - [#5](https://github.com/RandomFractals/vscode-leaflet/issues/5)
 Update dev dependencies to latest for vscode v1.56.0
 - [#6](https://github.com/RandomFractals/vscode-leaflet/issues/6)

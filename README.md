@@ -1,9 +1,9 @@
 # vscode-leaflet
 
 [![Apache-2.0 License](https://img.shields.io/badge/license-Apache2-brightgreen.svg)](http://opensource.org/licenses/Apache-2.0)
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/RandomFractalsInc.vscode-leaflet.svg?color=orange&style=?style=for-the-badge&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/RandomFractalsInc.vscode-leaflet.svg?color=orange)](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-leaflet)
 <a href='https://ko-fi.com/dataPixy' target='_blank' title='support: https://ko-fi.com/dataPixy'>
   <img height='24' style='border:0px;height:20px;' src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' alt='https://ko-fi.com/dataPixy' />
 </a>
@@ -21,13 +21,13 @@ See [Geo Data Viewer](https://github.com/RandomFractals/geo-data-viewer) 🗺️
 
 Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https://leafletjs.com) 🌿 JavaScript library for interactive preview of Geo datasets loaded in [VSCode Notebooks](https://code.visualstudio.com/api/extension-guides/notebook) 📚
 
-![Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
+![Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true
  "Leaflet Map 🗺️ Renderer")
 
-![World Countries in Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-world-countries-restbook.png?raw=true 
+![World Countries in Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-world-countries-restbook.png?raw=true
  "World Countries in Leaflet Map 🗺️ Renderer")
 
-![World Rivers in Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-world-rivers-restbook.png?raw=true 
+![World Rivers in Leaflet Map 🗺️ Renderer](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-world-rivers-restbook.png?raw=true
  "World Rivers in Leaflet Map 🗺️ Renderer")
 
 # Features
@@ -37,7 +37,7 @@ Leaflet Map 🗺️ Notebook 📓 cell ⌗ output renderer uses [Leaflet](https:
 - [REST Book](https://github.com/RandomFractals/vscode-leaflet#rest-book-example) 📓 [TypeScript Notebook](https://github.com/RandomFractals/vscode-leaflet#typescript-notebook-example) 📓 [.NET Interactive Notebook](https://github.com/RandomFractals/vscode-leaflet#net-interactive-notebook-example) 📓 and [Pyolite](https://github.com/RandomFractals/vscode-leaflet#pyolite-notebook-example) 🐍 [Notebook Examples](https://github.com/RandomFractals/vscode-leaflet#%EF%B8%8F-examples) 📚
 - View `JSON`, `CSV`, and `XML` data without Geo Location information in `JSON` format in a scrollable text container with [`code pre-wrap`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code) for a quick copy/paste to other places:
 
-![Leaflet Map 🗺️ Text Output](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-text-output.png?raw=true 
+![Leaflet Map 🗺️ Text Output](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-text-output.png?raw=true
  "Leaflet Map 🗺️ Text Output")
 
 # Supported Data Formats
@@ -56,7 +56,7 @@ Leaflet 🌿 Map 🗺️ Notebook 📓 cell ⌗ data output Renderer supports lo
 
 Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.vscode-data-table)  built-in [Notebook 📓 Examples](https://github.com/RandomFractals/vscode-data-table#-examples) to view Leaflet Map 🗺️ with provided sample [Geo datasets](https://github.com/RandomFractals/vscode-data-table/tree/main/data). You can access built-in Data Table 🈸 Notebook 📓 Examples via `Data Table: Notebook Examples` command from `View -> Command Palette...`
 
-![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/data-table-notebook-examples.png?raw=true 
+![Data Table 🈸 Notebook Examples](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/data-table-notebook-examples.png?raw=true
  "Data Table 🈸 Notebook Examples")
 
 ## .NET Interactive Notebook Example
@@ -69,7 +69,7 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 
 4. Run All cells ⌗:
 
-![USA Airports .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-net-notebook.png?raw=true 
+![USA Airports .NET Interactive Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-net-notebook.png?raw=true
  "USA Airports .NET Interactive Notebook 📓")
 
 ## TypeScript Notebook Example
@@ -82,7 +82,7 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 
 4. Run All cells ⌗ to view that `GeoJSON` data output in a Leaflet 🌿 Map 🗺️:
 
-![USA State Capitals TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-typescript-notebook.png?raw=true 
+![USA State Capitals TypeScript Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-typescript-notebook.png?raw=true
  "USA State Capitals TypeScript Notebook 📓")
 
 ### REST Book Example
@@ -95,17 +95,17 @@ Install and use [Data Table 🈸 for Notebooks 📚](https://marketplace.visuals
 
 4. Click on `...` in the gutter of `GET` data output and change it to Leaflet Map 🗺️ renderer:
 
-![World Cities REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true 
+![World Cities REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-renderer.png?raw=true
  "World Cities REST Book 📓")
 
 Also try [World Countries](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/world-countries.restbook) REST Book 📓 example:
 
-![World Countries REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-world-countries.png?raw=true 
+![World Countries REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-world-countries.png?raw=true
  "World Countries REST Book 📓")
 
 Or [USA States](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/usa-states.restbook) REST Book 📓 example:
 
-![USA States REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-usa-states-restbook.png?raw=true 
+![USA States REST Book 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-usa-states-restbook.png?raw=true
  "USA States REST Book 📓")
 
 ## Pyolite Notebook Example
@@ -114,9 +114,9 @@ Or [USA States](https://github.com/RandomFractals/vscode-leaflet/blob/main/noteb
 
 2. Load [Chicago Red Light Cameras](https://github.com/RandomFractals/vscode-leaflet/blob/main/notebooks/chicago-red-light-cameras-pyolite.ipynb) Pyolite Notebook 📓
 
-3. Run Python code cell and click on `...` -> `Choose Output Mimetype` -> `text/plain` Leaflet Map to view red light camera locations on the map 🗺️: 
+3. Run Python code cell and click on `...` -> `Choose Output Mimetype` -> `text/plain` Leaflet Map to view red light camera locations on the map 🗺️:
 
-![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-pyolite-notebook.png?raw=true 
+![Chicago Red Light Cameras Pyolite Notebook 📓](https://github.com/RandomFractals/vscode-leaflet/blob/main/docs/images/leaflet-map-pyolite-notebook.png?raw=true
  "Chicago Red Light Cameras Pyolite Notebook 📓")
 
 # Recommended Extensions
@@ -162,7 +162,7 @@ to generate `VSIX` Leaflet Map 🗺️ extension package with [vsce](https://cod
 
 # Contributions
 
-Any and all test, code or feedback contributions are welcome. 
+Any and all test, code or feedback contributions are welcome.
 
 Open an [issue](https://github.com/RandomFractals/vscode-leaflet/issues) or create a pull request to make this Leaflet Map 🗺️ vscode extension work better for all.
 
@@ -170,6 +170,6 @@ Open an [issue](https://github.com/RandomFractals/vscode-leaflet/issues) or crea
 
 <a href='https://ko-fi.com/dataPixy' target='_blank'>
   <img height='36' style='border:0px;height:36px;' border='0'
-    src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2' 
+    src='https://az743702.vo.msecnd.net/cdn/kofi3.png?v=2'
     alt='support me on ko-fi.com' />
 </a>
